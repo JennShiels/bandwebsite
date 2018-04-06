@@ -6,16 +6,8 @@
 	background-color: #212121;
 }
 
-.bg-color-three-reasons {
+.bg-color-maininfo {
 	background-color: #fff;
-}
-
-.bg-color-personal-info {
-	background-color: #fff;
-}
-
-.bg-color-work-history {
-	background-color: #fafafa;
 }
 
 .bg-color-contact {
@@ -45,9 +37,13 @@
 
 h1,
 h2,
-h3,
+h3{
+	margin:0;
+	text-align:left;
+}
 h4 {
 	margin: 0;
+	text-align: center;
 }
 
 /*-set the text transform to be uppercase
@@ -58,7 +54,7 @@ set the general-sub to 'Exo' font imported earlier--*/
 }
 
 .general-sub {
-	font-family: "Exo", sans-serif;
+	font-family: "Exo", "vintage";
 }
 
 .inline-block {
@@ -69,37 +65,15 @@ set the general-sub to 'Exo' font imported earlier--*/
 ensure that the columns will remain equal height regardless of their content*/
 
 .row-table {
-	display:table;
-	margin:0;
-}
+	display:table-cell;
+	}
 
-/*style the font for the About me section*/
-
-.history-heading,
-.section-heading{
-	font-family:"Exo", sans-serif;
-	font-weight: 300;
-	margin-top: 25px;
-	margin-bottom: 40px;
-}
-
-
-/*--------------------------------- Heading --- */
-
-header {
-	margin: 0;
-}
-
-.heading {
-	margin-left: 50px;
-}
+/*-------------------------style the font for the maininfo section*/
 
 .list-inline li {
 	display: inline-block;
 	padding-left:5px;
 	padding-right:5px;
-	
-
 }
 
 .logo {
@@ -108,15 +82,22 @@ header {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height:100%;
+	min-height:40%;
+	min-width:100%;
 	transition: all 0.5 ease-out;
 	-moz-transition: all 0.5 ease-out;
 	-webkit-transition: all 0.5 ease-out;
 }
 
-#nav {
-	margin: 0;
+.maininfo{
+	font-family:"Exo", sans-serif;
+	font-weight: 200;
+	margin-top: 0px;
+	margin-bottom: 35px;
 }
+
+
+/*--------------------------------- Header --- */
 
 /*Target the children of our nav which is he list items 
 to adjust the padding in the hvr class*/
@@ -137,10 +118,10 @@ to adjust the padding in the hvr class*/
 	width: 100%;
 	text-decoration: none;
 	color: #c48b1a;
-	height:120px;
+	height:75px;
 }
 
-/* Target the icons themselves adjusting their positions ize etc
+/* Target the icons themselves adjusting their position size etc
 display as block so that it occupies parent container*/
 
 .menuitem a i {
@@ -150,7 +131,7 @@ display as block so that it occupies parent container*/
 	font-size: 25px;
 }
 
-/* Target span text ie. Home Resume Contact and Download*/
+/* Target span text ie. Home music event and contactus*/
 
 .menuitem span {
 	display: block;
@@ -165,17 +146,17 @@ display as block so that it occupies parent container*/
 
 /*--------------------------Hvr.css* ----- */
 
-/*Targeting the hvr class- set the default colour to black using rgba which is colours & transparency*/
+/*Targeting the hvr class- set the default colour using rgba which is colours & transparency*/
 
 .hvr-sweep-to-bottom:before {
 	background: rgba(0, 0, 0, 0);
-	height: 100px;
+	height: 75px;
 }
 
 /*--------------------------Footer----- */
 
 /*minimum height of 120px.
-Now it can grow beyond that if the text if for some reason the About Me text extends or pushes below or 
+Now it can grow beyond that if the text if for some reason the maintext section extends or pushes below or 
 our pushes beyond the 120px. But if not it will default to 120px again providing that kind of visual symmetry, 
 visual balance between the footer and say, the menu items above.*/
 
@@ -210,6 +191,8 @@ footer .cv-pdf i:hover {
 
 }
 
+
+/*-------------------------------------------------------Social Links*/
 /*Create our custom class called social-links
 So the idea is we're going to use a border to create a perfect circle around the edges*/
 
@@ -245,127 +228,26 @@ So the idea is we're going to use a border to create a perfect circle around the
 	margin:20px;
 }
 
-/*----------------------------------Three-Reasons*/
+/*----------------------------------Main info*/
 
-.three-reasons-icon{
-	font-size:26px;
-	color:#e67e22;
-	
+.section-column{
+	background-color: yellow;
+	margin-bottom:0px;
 }
 
-.three-reasons-heading{
-	margin-bottom:15px;
+p{
+	margin-left: 15px;
+	text-align:center;
 }
-
-/*-----------------------------------Personal-info*/
-
-.personal-info-item{
-	margin-top: 15px;
-	margin-bottom: 20px;
-	display: block;
-	clear:both;
-}
-
-.personal-info-item .key,
-.personal-info-item .value {
-	padding-right:8px;
-}
-
-.personal-info-item .key p,
-.personal-info-item .value p {
-	margin:0;
-}
-
-.personal-info-item .key {
-	display: inline-block;
-	width:30%;
-	margin-right:21px;
-	padding-top:2px;
-	vertical-align:top;
-}
-
-.personal-info-item .key p{
-	font-weight:700;
-}
-
-.personal-info-item .value{
-	display:inline-block;
-	position:relative;
-	width:60%;
-}
-
-/*-----------------------------------Skills*/
-
-.progress{
-	position:relative;
-	height:25px;
-}
-
-.progress-type{
-	position:absolute;
-	left:0px;
-	font-weight:400;
-	padding:0 30px 2px 10px;
-	color:#fafafa;
-	background-color:rgba(25,25,25,0.2);
-}
-
-.progress-section{
-	margin:40px 20px 10px;
-}
-/*-----------------------------------Work History*/
-
-.timeline-item{
-	padding:4em 2em 0em 2em;
-	position: relative;
-	color: #333333;
-	border-left:1px solid;
-}
-
-.timeline-item p{
-	padding:0;
-	margin:0;
-}
-/*------------------ We're going to set a date range that will
-eventually be styled - grabbed by a style - using the ::before pseudo element and will
-represent the dates along the timeline. */
-
-.timeline-item:before{
-	content:attr(dates);
-	position:absolute;
-	left:2.5em;
-	top:3em;
-	display:block;
-	font-family: "Exo" sans-serif;
-	font-weight:500;
-	font-size:.8em;
-	padding:0;
-	margin:0;
-}
-
-.timeline-item:after{
-	width:12px;
-	height: 12px;
-	display:inline-block;
-	top:2.4em;
-	position:absolute;
-	left: -6px;
-	border-radius:12px;
-	content:'';
-	background:#333333;
-}
-
-.history-heading{
+.mainsection-heading{
 	color:#333;
 	margin-bottom:50px;
-	margin-top:30px;
+	margin-top:20px;
+	text-align: center;
+	padding-left:10px;
 }
 
-.history-items{
-	margin-bottom:15px;
-	}
-	
-	
+
 /*-----------------------------------Contacts*/
 
 .contact-heading{
@@ -397,7 +279,7 @@ So any screen size beyond 992px - greater than 992px - this section-column will 
 .section-column{
 	padding:0px 0px 0px;
 	float:none;
-	display: table-cell;
+	display: inline block;
 }
 	
 .center-form{
@@ -416,6 +298,7 @@ So any screen size beyond 992px - greater than 992px - this section-column will 
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
+
