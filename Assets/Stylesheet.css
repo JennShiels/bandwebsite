@@ -7,7 +7,7 @@
 }
 
 .bg-color-maininfo {
-	background-color: #fff;
+	background-color: yellow;
 }
 
 .bg-color-contact {
@@ -57,6 +57,18 @@ set the general-sub to 'Exo' font imported earlier--*/
 	font-family: "Exo", "vintage";
 }
 
+.minilogo {
+	background: url("/Assets/Images/cover pic.jpg");
+ 	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height:40%;
+	min-width:100%;
+	transition: all 0.5 ease-out;
+	-moz-transition: all 0.5 ease-out;
+	-webkit-transition: all 0.5 ease-out;
+}
+ 
 .inline-block {
 	display: inline-block;
 }
@@ -78,22 +90,14 @@ ensure that the columns will remain equal height regardless of their content*/
 
 .logo {
 	background: url("/Assets/Images/cover pic.jpg");
-	background-color: #333333;
+	background-color: yellow;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
-	min-height:40%;
-	min-width:100%;
+	background-size: 100%;
+	
 	transition: all 0.5 ease-out;
 	-moz-transition: all 0.5 ease-out;
 	-webkit-transition: all 0.5 ease-out;
-}
-
-.maininfo{
-	font-family:"Exo", sans-serif;
-	font-weight: 200;
-	margin-top: 0px;
-	margin-bottom: 35px;
 }
 
 
@@ -164,7 +168,7 @@ footer {
 	background-color: #525252;
 	color: #fafafa;
 	min-height: 150px;
-	margin: 0;
+	margin-left: 10px;
 }
 
 /* let's start adding some styles to our icons
@@ -173,7 +177,7 @@ We're going to go down to footer .cv-pdf i,
 because we're accessing the font awesome icon -
 It's a bit small.*/
 
-footer .cv-pdf i {
+footer .contactform i {
 	color: #fafafa;
 	text-align: center;
 	font-size: 18px;
@@ -182,7 +186,7 @@ footer .cv-pdf i {
 }
 
 
-footer .cv-pdf i:hover {
+footer .contactform i:hover {
 	color: #ffff01;
 	transition: all 0.35s ease-in-out;
 	-moz-transition: all 0.35s ease-in-out;
@@ -224,9 +228,6 @@ So the idea is we're going to use a border to create a perfect circle around the
 	
 }
 
-#footer-details{
-	margin:20px;
-}
 
 /*----------------------------------Main info*/
 
@@ -292,13 +293,12 @@ So any screen size beyond 992px - greater than 992px - this section-column will 
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 100%;
   }
 }
 .container-fluid {
-  margin-right: auto;
-  margin-left: auto;
+  margin-right:0 auto;
+  margin-left:0 auto;
   padding-left: 0px;
   padding-right: 0px;
 }
-
