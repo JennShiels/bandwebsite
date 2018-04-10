@@ -7,7 +7,7 @@
 }
 
 .bg-color-maininfo {
-	background-color: yellow;
+	background-color: #fff;
 }
 
 .bg-color-contact {
@@ -57,20 +57,8 @@ set the general-sub to 'Exo' font imported earlier--*/
 	font-family: "Exo", "vintage";
 }
 
-.minilogo {
-	background: url("/Assets/Images/cover pic.jpg");
- 	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height:40%;
-	min-width:100%;
-	transition: all 0.5 ease-out;
-	-moz-transition: all 0.5 ease-out;
-	-webkit-transition: all 0.5 ease-out;
-}
- 
 .inline-block {
-	display: inline-block;
+	display:flex;
 }
 
 /*specify its child columns as table cells and by doing that we
@@ -86,18 +74,6 @@ ensure that the columns will remain equal height regardless of their content*/
 	display: inline-block;
 	padding-left:5px;
 	padding-right:5px;
-}
-
-.logo {
-	background: url("/Assets/Images/cover pic.jpg");
-	background-color: yellow;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	
-	transition: all 0.5 ease-out;
-	-moz-transition: all 0.5 ease-out;
-	-webkit-transition: all 0.5 ease-out;
 }
 
 
@@ -231,23 +207,35 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 /*----------------------------------Main info*/
 
-.section-column{
-	background-color: yellow;
+
+.section-columntop{
+	background-image: url(/Assets/Images/coverpic.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	margin-bottom:0px;
+	margin-top:10px;
 }
 
-p{
-	margin-left: 15px;
+.section-columnbottom{
+	background-color: #fff;
+	margin-bottom:0px;
+	margin-top:-10px;
+}
+
+#general-sub p{
+	font-family: "Exo", sans-serif;
+	color:#04070e;
+	margin-bottom: 35px;
 	text-align:center;
 }
+
 .mainsection-heading{
-	color:#333;
-	margin-bottom:50px;
+	color:#04070e;
+	margin-bottom:30px;
 	margin-top:20px;
 	text-align: center;
-	padding-left:10px;
 }
-
 
 /*-----------------------------------Contacts*/
 
@@ -276,13 +264,26 @@ button[type="submit"]{
 And we're using the break-point of 992px.
 So any screen size beyond 992px - greater than 992px - this section-column will now apply*/
 
+@media (max-width:992px){
+	.menuitem span{
+		display: block;
+		font-size: 75%;
+		text-align:center;
+}}
+
 @media(min-width: 992px){
-.section-column{
+.section-columntop{
 	padding:0px 0px 0px;
 	float:none;
-	display: inline block;
+	display: inline-block;
 }
-	
+.section-columnbottom{
+	padding:0px 0px 0px;
+	float:none;
+	display: inline-block;
+}
+
+
 .center-form{
 	padding-top:30px;
 	min-height:240px;
@@ -295,10 +296,12 @@ So any screen size beyond 992px - greater than 992px - this section-column will 
   .container {
     width: 100%;
   }
-}
+
+
 .container-fluid {
-  margin-right:0 auto;
-  margin-left:0 auto;
+  margin-right: auto;
+  margin-left: auto;
   padding-left: 0px;
   padding-right: 0px;
+}
 }
