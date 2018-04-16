@@ -1,103 +1,63 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,800|Exo:100,300,400,500,700,800");
 
-/*--------------------------------- Colors --------------------------------- */
-
-.bg-color-name-title {
-	background-color: #212121;
+/*---apply this to override any other possible uneven margins and paddings*/
+*{
+	margin:0; 
+	padding:0;
 }
 
-.bg-color-maininfo {
-	background-color: #fff;
-}
+/*---repeat the tiled image to cover the whole background of any screen---*/
 
-.bg-color-contact {
-	background-color: #fff;
-}
-
-.ui-menu-color-home {
-	background-color: #0e080a;
-	padding-left: 5px;
-}
-
-.ui-menu-color-music {
-	background-color: #0e080a;
-}
-
-.ui-menu-color-events {
-	background-color: #0e080a;
-}
-
-.ui-menu-color-contactus {
-	background-color: #0e080a;
-}
-
-/*--------------------------------- Special Paddings/Margins/texts/ -- */
-
-/*Set margins for our headings*/
-
-h1,
-h2,
-h3{
-	margin:0;
-	text-align:left;
-}
-h4 {
-	margin: 0;
-	text-align: center;
-}
-
-/*-set the text transform to be uppercase
-set the general-sub to 'Exo' font imported earlier--*/
-
-.uppercase {
-	text-transform: uppercase;
-}
-
-.general-sub {
-	font-family: "Exo", "vintage";
-}
-
-.inline-block {
-	display:flex;
-}
-
-/*specify its child columns as table cells and by doing that we
-ensure that the columns will remain equal height regardless of their content*/
-
-.row-table {
-	display:table-cell;
+body{
+	background: url("/Assets/Images/backgroundtile.jpg") repeat;    
 	}
 
-/*-------------------------style the font for the maininfo section*/
+/*--- This width of 100% will apply to all screen widths on all 
+images but allows the it to only go as wide as the original image to keep quality.*/
 
-.list-inline li {
-	display: inline-block;
-	padding-left:5px;
-	padding-right:5px;
+img{
+	max-width:100%;
+	}
+	
+/*--------------------------Menu bar-------*/
+
+.menubar{
+	color:#966f33;
+	opacity:1.5;
+	text-align:center;
+	font-size-adjust: inherit;
+	font-family:fantasy;
+	margin-top:2%;
 }
 
-
-/*--------------------------------- Header --- */
-
-/*Target the children of our nav which is he list items 
-to adjust the padding in the hvr class*/
-
-#nav li {
-	padding: 0;
+.menubutton{
+	background:#cf1407;	/* Firered colour for menu buttons before hover*/
+	height:75px;        /* use em to make size in relation to font size*/
+	width:24%;			 /* 5 buttons at 24% of width of screen with enough room for margin space*/
+	margin:0 .5%;
+	float: left;
 }
 
-.menuitem {
-	height: 75px;
+/* Target span text ie. Home music event and contact*/
+
+.menubar span {
+	display: block;
+	width: 100%;
+	padding-top: 5px;
 	text-align: center;
-	padding: 0;
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: 100;
+	letter-spacing: 2px;
 }
 
 /* Target font awesome icons */
 
-.menuitem a {
+.menubutton a {
+	font-size:1.5em;
 	width: 100%;
 	text-decoration: none;
-	color: #c48b1a;
+	color: #5878ea;
 	height:75px;
 }
 
@@ -105,203 +65,46 @@ to adjust the padding in the hvr class*/
 display as block so that it occupies parent container*/
 
 .menuitem a i {
-	padding-top: 15px;
-	display: block;
-	color: #c48b1a;
-	font-size: 25px;
-}
-
-/* Target span text ie. Home music event and contactus*/
-
-.menuitem span {
-	display: block;
-	width: 100%;
 	padding-top: 5px;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 14px;
-	font-weight: 100;
-	letter-spacing: 2px;
+	display: block;
+	color: #5878ea;
 }
-
 /*--------------------------Hvr.css* ----- */
 
 /*Targeting the hvr class- set the default colour using rgba which is colours & transparency*/
 
 .hvr-sweep-to-bottom:before {
-	background: rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0.25);
 	height: 75px;
 }
 
-/*--------------------------Footer----- */
-
-/*minimum height of 120px.
-Now it can grow beyond that if the text if for some reason the maintext section extends or pushes below or 
-our pushes beyond the 120px. But if not it will default to 120px again providing that kind of visual symmetry, 
-visual balance between the footer and say, the menu items above.*/
-
-footer {
-	background-color: #525252;
-	color: #fafafa;
-	min-height: 150px;
-	margin-left: 10px;
-}
-
-/* let's start adding some styles to our icons
-and our text and the display itself.
-We're going to go down to footer .cv-pdf i, 
-because we're accessing the font awesome icon -
-It's a bit small.*/
-
-footer .contactform i {
-	color: #fafafa;
-	text-align: center;
-	font-size: 18px;
-	padding-left: 5px;
-
-}
+/*--------------------------Images*/
 
 
-footer .contactform i:hover {
-	color: #ffff01;
-	transition: all 0.35s ease-in-out;
-	-moz-transition: all 0.35s ease-in-out;
-	-webkit-transition: all 0.35s ease-in-out;
-	-o-transition: all 0.35s ease-in-out;
+/*-------------------------Media Queries---*/
 
-}
-
-
-/*-------------------------------------------------------Social Links*/
-/*Create our custom class called social-links
-So the idea is we're going to use a border to create a perfect circle around the edges*/
-
-.social-links {
-	padding-bottom: 15px;
-
-}
-
-.social-links li a i {
-	width: 32px;
-	height: 32px;
-	padding: 12px;
-	border-radius: 50%;
-	font-size: 13px;
-	line-height: 7px;
-	text-align: center;
-	color: #fafafa;
-	background: #8f8f8f;
-	transition: all 0.35s ease-in-out;
-	-moz-transition: all 0.35s ease-in-out;
-	-webkit-transition: all 0.35s ease-in-out;
-	-o-transition: all 0.35s ease-in-out;
-
-
-}
-
-.social-links li a i:hover{
-	background-color:#fafa01;
-	
-}
-
-
-/*----------------------------------Main info*/
-
-
-.section-columntop{
-	background-image: url(/Assets/Images/coverpic.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	margin-bottom:0px;
-	margin-top:10px;
-}
-
-.section-columnbottom{
-	background-color: #fff;
-	margin-bottom:0px;
-	margin-top:-10px;
-}
-
-#general-sub p{
-	font-family: "Exo", sans-serif;
-	color:#04070e;
-	margin-bottom: 35px;
+@media screen and (max-width:800px){
+.menubar{
+	color:#966f33;
 	text-align:center;
+	font-family: "Exo" sans-serif;
+	margin-top:2.5px;
 }
-
-.mainsection-heading{
-	color:#04070e;
-	margin-bottom:30px;
-	margin-top:20px;
+.menubutton{
+	background:#e00004;	/* red colour for menu buttons in mobile*/
+	height:3.5em;        
+	width:23%;			 
+	margin:0 .5% 0 .5%;
+	float: left;
+}
+.menubar span {
+	display: block;
+	width: 90%;
+	padding-top: 2.5px;
 	text-align: center;
-}
-
-/*-----------------------------------Contacts*/
-
-.contact-heading{
-	font-family: "Exo", sans-serif;
-	font-weight:300;
-	margin-top:25px;
-	margin-bottom:20px
-}
-
-.center-form{
-	padding-top:10px;
-	margin:0 auto;
-	max-width:50%;
-}
-
-button[type="submit"]{
-	margin-top:15px;
-	margin-bottom:20px;
-	background-color: #e84610;
-	color:#fafafa;
-}
-/*-----------------------------------Media Queries*/
-
-/* we're using the min-width rather than the max-width for mobile first.
-And we're using the break-point of 992px.
-So any screen size beyond 992px - greater than 992px - this section-column will now apply*/
-
-@media (max-width:992px){
-	.menuitem span{
-		display: block;
-		font-size: 75%;
-		text-align:center;
-}}
-
-@media(min-width: 992px){
-.section-columntop{
-	padding:0px 0px 0px;
-	float:none;
-	display: inline-block;
-}
-.section-columnbottom{
-	padding:0px 0px 0px;
-	float:none;
-	display: inline-block;
-}
-
-
-.center-form{
-	padding-top:30px;
-	min-height:240px;
-	margin:0 auto;
-	max-height:50%;
-}
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 100%;
-  }
-
-
-.container-fluid {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0px;
-  padding-right: 0px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 100;
+	letter-spacing: 1.5px;
 }
 }
