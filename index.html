@@ -38,21 +38,44 @@
 
 	<aside>
 		<div class="flex-container">
-			<div><iframe width="175" height="200" src="https://www.youtube.com/embed/9zdjrMggl9Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<div><iframe width="175" height="125" src="https://www.youtube.com/embed/9zdjrMggl9Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				<p>Mashup -<em> Avicii wake me up cover</em></p>
 			</div>
 
-			<div><iframe width="175" height="200" src="https://www.youtube.com/embed/j36xNovzWq4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<div><iframe width="175" height="125" src="https://www.youtube.com/embed/j36xNovzWq4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				<p>Brian Adams- <em>Summer of 69 Cover</em></p>
 			</div>
-			<div><iframe width="175" height="200" src="https://www.youtube.com/embed/sKvBdFakaWU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<div><iframe width="175" height="125" src="https://www.youtube.com/embed/sKvBdFakaWU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				<p>Mr Brightside- <em>The Killers Cover</em></p>
 			</div>
 		</div>
 	</aside>
 	
-	<footer>
-		<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+<!---set the footer container to container -fluid. Footer will contain links to linkeden,facebook and downloadable cv
+Make own class to set the text to uppercase in the h5 elements--->
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4">
+				<h5 class="uppercase general-sub">About</h5>
+				<p class="inline-block"> Full Stack Developer. Skilled in everything from HTMLto Heroku. The capacity for structural and design thinking.
+				</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4">
+				<h5 class="uppercase general-sub">Subscribe</h5>
+				<p class="inline-block"> Please subscribe to our Youtube channel by clicking the icon.
+					<a href="https://www.youtube.com/playlist?list=UUSb4im1z_KEThERelxwC_fw" target="_blank" class="subscribe"><i class="fa fa-youtube-play" style="font-size:48px;color:red" aria-hidden="true"></i></a>
+				</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4">
+				<h5 class="uppercase general-sub">My Social Media</h5>
+				<ul class="list-inline social-links">
+					<li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a target="_blank" href="#"><i class="fa fa-pinterest"></i></a></li>
+				</ul>
+			</div>
+		</div>
 	</footer>
 
 </body>
