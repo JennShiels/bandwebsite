@@ -133,63 +133,6 @@ display as block so that it occupies parent container*/
 	font-size: 12px;
 }
 
-/* Containers in home page */
-
-.container-wrapper {}
-
-.container-wrapper--red {
-    background-color: #f05f40;
-    color: white;
-}
-
-.content-container {
-    padding-top: 75px;
-    padding-bottom: 75px;
-}
-
-/* Block dividers */
-
-.block-divider {
-    width: 75px;
-    height: 5px;
-    border: 0;
-    background-color: #444;
-}
-
-.block-divider--orange {
-    background-color: #f05f40;
-}
-
-.block-divider--white {
-    background-color: white;
-}
-
-.block-divider--short {
-    width: 35px;
-}
-
-/* Page Headers */
-
-.page-header {
-    margin-bottom: 0;
-    border-bottom: 0;
-    text-align: center;
-}
-
-.page-header h2 {
-    margin-top: 0;
-}
-
-/*----------home page--- Quotes */
-
-.quotes .page-header {
-    margin-bottom: 25px;
-}
-
-blockquote.quote {
-    border-left: 0;
-}
-
 /*-------------------------FOOTER-*/
 
 /*--style the font for the social links*/
