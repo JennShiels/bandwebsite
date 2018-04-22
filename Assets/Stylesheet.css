@@ -20,6 +20,10 @@ set the general-sub to 'Exo' font imported earlier--*/
 	font-family: "Exo", "vintage";
 }
 
+.h5>p{
+	font-size: 10px;
+	
+}
 
 /*--- This width of 100% will apply to all screen widths on all 
 images but allows the it to only go as wide as the original image to keep quality.*/
@@ -54,7 +58,7 @@ img{
 
 .menubutton{
 	background:#c48b1a;	/* Golden colour for menu buttons before hover*/
-	height:75px;        /* use em to make size in relation to font size*/
+	height:45px;        /* use em to make size in relation to font size*/
 	width:24%;			 /* 5 buttons at 24% of width of screen with enough room for margin space*/
 	margin:0 0.5%;
 	float: left;
@@ -215,7 +219,11 @@ img{
     background-position: center; 
     padding:0 15% ;
 }
+footer {
+	min-height: 100px;
 }
+}
+
 @media screen and (min-width:1200px)
 {
 .menubutton{
