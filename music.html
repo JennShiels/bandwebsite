@@ -3,6 +3,7 @@
 
 <head>
 
+	<script src="//api.html5media.info/1.2.2/html5media.min.js"></script><!---html5media.info>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
@@ -34,16 +35,8 @@
 		<div class="bglogo">
 			<img src="/Assets/Images/coverpic.jpg" alt="Cover image">
 		</div>
-			<div id="audioplayer" style="border: 1px solid black">
-  <button id="pButton" class="play" onclick="playAudio()"></button>
-    <div id="timeline">
-    <div id="playhead"></div>
-  </div>
-  <div id="volume_control">
-    <label id="rngVolume_label" for="rngVolume">Volume:</label>
-    <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1">
-  </div>
-</div>
+		<video src="/Assets/Videos/TheMonkees.mp4.URL" width="320" height="200" controls preload></video>
+		</div>
 	</section>
 
 	<aside>

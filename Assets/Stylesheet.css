@@ -19,6 +19,12 @@ set the general-sub to 'Exo' font imported earlier--*/
 	text-transform: uppercase;
 }
 
+.page-header> text-uppercase{
+	
+	text-transform: uppercase;
+	color:#c48b1a;            /*  Electric blue for band member section*/
+}
+
 .general-sub {
 	font-family: "Exo", "vintage";
 }
@@ -133,21 +139,20 @@ display as block so that it occupies parent container*/
 	font-size: 12px;
 }
 
-/* Containers in home page */
+/*------------------------ Containers in home page */
 
-.container-wrapper {}
-
-.container-wrapper--red {
-    background-color: #f05f40;
-    color: white;
+.container-wrapper {
+	border-bottom-style: groove;
+	color:blue;
 }
 
 .content-container {
+	margin-top:25px;
     padding-top: 75px;
     padding-bottom: 75px;
 }
 
-/* Block dividers */
+/* -----------------------Block dividers */
 
 .block-divider {
     width: 75px;
@@ -168,7 +173,8 @@ display as block so that it occupies parent container*/
     width: 35px;
 }
 
-/* Page Headers */
+/* ---------------------------Page Headers */
+
 
 .page-header {
     margin-bottom: 0;
@@ -180,13 +186,22 @@ display as block so that it occupies parent container*/
     margin-top: 0;
 }
 
-/*----------home page--- Quotes */
+/*-----------------------Images for band members info*/
 
-.quotes .page-header {
+.media-left img{
+	margin-top:0;
+	border-radius: 10%;
+	background-color: #c48b1a;
+}
+
+
+/*----------home page--- Band Member info */
+
+.members .page-header {
     margin-bottom: 25px;
 }
 
-blockquote.quote {
+blockquote.members {
     border-left: 0;
 }
 
