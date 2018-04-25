@@ -19,10 +19,11 @@ set the general-sub to 'Exo' font imported earlier--*/
 	text-transform: uppercase;
 }
 
-.page-header> text-uppercase{
-	
+.page-header>text-uppercase {
+
 	text-transform: uppercase;
-	color:#c48b1a;            /*  Electric blue for band member section*/
+	color: #c48b1a;
+	/*  Electric blue for band member section*/
 }
 
 .general-sub {
@@ -142,67 +143,74 @@ display as block so that it occupies parent container*/
 /*------------------------ Containers in home page */
 
 .container-wrapper {
+	position: -webkit-sticky;
+	position: sticky;
+	margin-top: 10px;
 	border-bottom-style: groove;
-	color:blue;
+	color: blue;
 }
 
 .content-container {
-	margin-top:25px;
-    padding-top: 75px;
-    padding-bottom: 75px;
+
+	margin-top: 175px;
+	padding-top: 75px;
+	padding-bottom: 75px;
 }
 
 /* -----------------------Block dividers */
 
 .block-divider {
-    width: 75px;
-    height: 5px;
-    border: 0;
-    background-color: #444;
+	width: 75px;
+	height: 5px;
+	border: 0;
+	background-color: #444;
 }
 
 .block-divider--orange {
-    background-color: #f05f40;
+	background-color: #f05f40;
 }
 
 .block-divider--white {
-    background-color: white;
+	background-color: white;
 }
 
 .block-divider--short {
-    width: 35px;
+	width: 35px;
 }
 
 /* ---------------------------Page Headers */
 
-
 .page-header {
-    margin-bottom: 0;
-    border-bottom: 0;
-    text-align: center;
+	margin-top: 150px;
+	margin-bottom: 0;
+	border-bottom: 0;
+	text-align: center;
 }
 
 .page-header h2 {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 /*-----------------------Images for band members info*/
 
-.media-left img{
-	margin-top:0;
-	border-radius: 10%;
-	background-color: #c48b1a;
+.img-circle media-object {
+	
+	margin-top: 0;
+	border-radius: 50%;
+	
 }
 
 
 /*----------home page--- Band Member info */
 
-.members .page-header {
-    margin-bottom: 25px;
+section.members {
+	height: 250px;
+	margin-top: 15px;
+	margin-bottom: 0px;
 }
 
 blockquote.members {
-    border-left: 0;
+	border-left: 0;
 }
 
 /*-------------------------FOOTER-*/
@@ -216,68 +224,72 @@ blockquote.members {
 }
 
 /*--------------------------Music page section audio*/
-#audioplayer{
-  width: 480px;
-  height: 75px;
-  margin: 50px auto auto auto;
-  border: solid;
-  text-align:center;
-  background-color: rgba(5, 173, 13, 0.49);
+
+#audioplayer {
+	width: 480px;
+	height: 75px;
+	margin: 50px auto auto auto;
+	border: solid;
+	text-align: center;
+	background-color: rgba(5, 173, 13, 0.49);
 }
- 
-#pButton{
-  height:60px;
-  width: 60px;
-  border: none;
-  background-size: 70% 70%;
-  background-repeat: no-repeat;
-  background-position: center;
-  float:left;
-  outline:none;
+
+#pButton {
+	height: 60px;
+	width: 60px;
+	border: none;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	outline: none;
 }
- 
-.play{background: url('Play_button.png') ;}
-.pause{background: url('Pause_button.png') ;}
- 
-#timeline{
-  width: 400px;
-  height: 20px;
-  margin-top: 20px;
-  float: left;
-  border-radius: 15px;
-  border: black 1px solid;
-  display: block;
-  background-color: rgb(43,194,83);
-  background-image: linear-gradient(
-    center bottom,
-    rgb(43,194,83) 37%,
-    rgb(84,240,84) 69%
-  );
-  box-shadow:
-    inset 0 2px 9px  rgba(255,255,255,0.3),
-    inset 0 -2px 6px rgba(0,0,0,0.4);
-  position: relative;
+
+.play {
+	background: url('Play_button.png');
 }
- 
-#playhead{
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  margin-top: 1px;
-  background: rgba(0, 0, 0,1);
+
+.pause {
+	background: url('Pause_button.png');
 }
- 
-#volume_control{
-  margin:auto;
-  width:50%;
+
+#timeline {
+	width: 400px;
+	height: 20px;
+	margin-top: 20px;
+	float: left;
+	border-radius: 15px;
+	border: black 1px solid;
+	display: block;
+	background-color: rgb(43, 194, 83);
+	background-image: linear-gradient( center bottom,
+	rgb(43, 194, 83) 37%,
+	rgb(84, 240, 84) 69%);
+	box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+	inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+	position: relative;
 }
- 
-#rngVolume_label{
-  vertical-align:middle;
+
+#playhead {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	margin-top: 1px;
+	background: rgba(0, 0, 0, 1);
 }
- 
-#rngVolume{
-  margin-top: 8px;vertical-align:middle;
+
+#volume_control {
+	margin: auto;
+	width: 50%;
+}
+
+#rngVolume_label {
+	vertical-align: middle;
+}
+
+#rngVolume {
+	margin-top: 8px;
+	vertical-align: middle;
 }
 
 /*--------------------------Footer----- */
@@ -362,16 +374,16 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 @media screen and (min-width:800px) {
 	.menubar span {
-	font-size: 1em;
-}
+		font-size: 1em;
+	}
 	.menubutton a {
-	font-size: 1.5em;
-	height: 75px;
-}
+		font-size: 1.5em;
+		height: 75px;
+	}
 	.menubutton {
 		background: #c48b1a;
 		/* Royal blue colour for menu buttons in mobile*/
-		height:75px;
+		height: 75px;
 	}
 	img {
 		background-repeat: no-repeat;
@@ -379,44 +391,45 @@ So the idea is we're going to use a border to create a perfect circle around the
 		background-position: center;
 		padding: 0 15%;
 	}
-	
-	footer .subscribe i {
-	color: #c48b1a; /*gold*/
-	}
-		.social-links li a i:hover {
-	background-color:#c48b1a;
 
-}
+	footer .subscribe i {
+		color: #c48b1a;
+		/*gold*/
+	}
+	.social-links li a i:hover {
+		background-color: #c48b1a;
+
+	}
 }
 
 @media screen and (min-width:1200px) {
 	.menubar span {
-	font-size: 1em;
-	letter-spacing: 1.5px;
-}
+		font-size: 1em;
+		letter-spacing: 1.5px;
+	}
 	.menubutton a {
-	font-size: 1.5em;
-	height: 75px;
-}
+		font-size: 1.5em;
+		height: 75px;
+	}
 	.menubutton {
 		background: #5878ea;
 		/* Royal blue colour for menu buttons for laptop*/
-		height:75px;
+		height: 75px;
 	}
-	.flex-container>div> iframe {
+	.flex-container>div>iframe {
 		width: 225px;
 		height: 225px;
 		font-size: 24px;
 	}
-.flex-container p {
-	font-size: 1.2em;
-	text-align:center;
-}
-footer .subscribe i {
-	color: #5878ea;
+	.flex-container p {
+		font-size: 1.2em;
+		text-align: center;
+	}
+	footer .subscribe i {
+		color: #5878ea;
 	}
 	.social-links li a i:hover {
-	background-color:#5878ea;
+		background-color: #5878ea;
 
-}
+	}
 }
