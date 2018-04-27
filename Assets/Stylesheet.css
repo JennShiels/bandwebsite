@@ -30,9 +30,8 @@ set the general-sub to 'Exo' font imported earlier--*/
 	font-family: "Exo", "vintage";
 }
 
-.h5>p {
-	font-size: 10px;
-
+.h5 general-sub{
+	font-size:18px;
 }
 
 /*--- This width of 100% will apply to all screen widths on all 
@@ -159,25 +158,9 @@ display as block so that it occupies parent container*/
 
 /* -----------------------Block dividers */
 
-.block-divider {
-	width: 75px;
-	height: 5px;
-	border: 0;
-	background-color: #444;
+.blockquote p{
+	font-size:25px;
 }
-
-.block-divider--orange {
-	background-color: #f05f40;
-}
-
-.block-divider--white {
-	background-color: white;
-}
-
-.block-divider--short {
-	width: 35px;
-}
-
 /* ---------------------------Page Headers */
 
 .page-header {
@@ -193,13 +176,11 @@ display as block so that it occupies parent container*/
 
 /*-----------------------Images for band members info*/
 
-.img-circle media-object {
-	
+.emoji{
 	margin-top: 0;
 	border-radius: 50%;
 	
 }
-
 
 /*----------home page--- Band Member info */
 
@@ -213,14 +194,8 @@ blockquote.members {
 	border-left: 0;
 }
 
-/*-------------------------FOOTER-*/
-
-/*--style the font for the social links*/
-
-.list-inline li {
-	display: inline-block;
-	padding-left: 5px;
-	padding-right: 5px;
+.blocks{
+	background-color: #c48b1a;
 }
 
 /*--------------------------Music page section audio*/
@@ -292,7 +267,15 @@ blockquote.members {
 	vertical-align: middle;
 }
 
-/*--------------------------Footer----- */
+/*-------------------------FOOTER-*/
+
+/*--style the font for the social links*/
+
+.list-inline li {
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
 
 /*minimum height of 120px.
 Now it can grow beyond that if the text if for some reason the About Me text extends or pushes below or 
@@ -302,7 +285,7 @@ visual balance between the footer and say, the menu items above.*/
 footer {
 	background-color: #525252;
 	color: #fafafa;
-	min-height: 100px;
+	min-height: 120px;
 	margin: 0;
 }
 
@@ -314,7 +297,7 @@ It's a bit small.*/
 footer .subscribe i {
 	color: #cf1407;
 	text-align: center;
-	font-size: 18px;
+	font-size:12px;
 	padding-left: 5px;
 
 }
@@ -328,11 +311,11 @@ So the idea is we're going to use a border to create a perfect circle around the
 }
 
 .social-links li a i {
-	width: 32px;
-	height: 32px;
+	width: 35px;
+	height: 35px;
 	padding: 12px;
 	border-radius: 50%;
-	font-size: 13px;
+	font-size: 18px;
 	line-height: 7px;
 	text-align: center;
 	color: #fafafa;
@@ -425,9 +408,23 @@ So the idea is we're going to use a border to create a perfect circle around the
 		font-size: 1.2em;
 		text-align: center;
 	}
+	
+	footer {
+	background-color: #cf1407;
+	color: #121212;
+	min-height: 115px;
+	font-size: 18px;
+	margin: 0;
+}
+
 	footer .subscribe i {
-		color: #5878ea;
-	}
+	color: #5878ea;
+	text-align: center;
+	font-size:18px;
+	padding-left: 5px;
+
+}
+	
 	.social-links li a i:hover {
 		background-color: #5878ea;
 
