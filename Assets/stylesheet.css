@@ -3,12 +3,6 @@
 /*---repeat the tiled image to cover the whole background of any screen---*/
 
 /*---apply this to override any other possible uneven margins and paddings*/
-h1,
-h2,
-h3{
-	text-align: center;
-	
-}
 
 body,
 html {
@@ -277,9 +271,25 @@ blockquote.members {
 	display:none;
 }
 
-h3>p{
-	font-size: 12px;
+.display-bottommiddle{
+	margin-top: 10px;
+	margin-bottom: 0;
+	border-bottom: 0;
 	text-align: center;
+	font-size: 12px;
+}
+
+.slideshow-title{
+	font-size:28px;
+	text-align: center;
+}
+.block-location{
+	font-family: fantasy;
+	font-size:25px;
+	text-align: center;
+}
+.general-sub p{
+	font-size:38px;
 }
 /*-------------------------FOOTER-*/
 
@@ -434,7 +444,7 @@ So the idea is we're going to use a border to create a perfect circle around the
 	footer .subscribe i {
 	color: #5878ea;
 	text-align: center;
-	font-size:12px;
+	font-size:18px;
 	padding-left: 5px;
 
 }
