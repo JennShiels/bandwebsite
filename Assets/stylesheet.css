@@ -30,17 +30,12 @@ set the general-sub to 'Exo' font imported earlier--*/
 	font-family: "Exo", "vintage";
 }
 
-.h5 general-sub{
-	font-size:18px;
+.h5 general-sub {
+	font-size: 18px;
 }
 
 /*--- This width of 100% will apply to all screen widths on all 
 images but allows the it to only go as wide as the original image to keep quality.*/
-
-img {
-	max-width: 100%;
-
-}
 
 /*--------------------------Background Cover Image*/
 
@@ -58,7 +53,7 @@ img {
 
 .menubar {
 	color: #966f33;
-	opacity: 1.5;
+	opacity: 2.5;
 	text-align: center;
 	font-size-adjust: inherit;
 	font-family: fantasy;
@@ -123,7 +118,6 @@ display as block so that it occupies parent container*/
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	background: url("/Assets/Images/backgroundtile.jpg") repeat;
 }
 
 .flex-container>div {
@@ -139,11 +133,12 @@ display as block so that it occupies parent container*/
 	font-size: 12px;
 }
 
-/*------------------------ Containers in home page */
+/*------------------------ Containers */
 
 .container-wrapper {
+	height: 100%;
 	position: relative;
-	margin-top: 10px;
+	margin-top: 20px;
 	border-bottom-style: groove;
 	color: blue;
 }
@@ -157,9 +152,10 @@ display as block so that it occupies parent container*/
 
 /* -----------------------Block dividers */
 
-.blockquote p{
-	font-size:25px;
+.blockquote p {
+	font-size: 25px;
 }
+
 /* ---------------------------Page Headers */
 
 .page-header {
@@ -175,26 +171,162 @@ display as block so that it occupies parent container*/
 
 /*-----------------------Images for band members info*/
 
-.emoji{
+.emoji {
 	margin-top: 0;
-	border-radius: 50%;
-	
+	border-radius: 25%;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
 }
 
 /*----------home page--- Band Member info */
 
-section.members {
-	height: 250px;
-	margin-top: 15px;
-	margin-bottom: 0px;
-}
-
-blockquote.members {
+.members {
 	border-left: 0;
 }
 
-.blocks{
+.blocks {
 	background-color: #c48b1a;
+}
+
+/* -------------Image Gallery on Events page*/
+
+* {
+	box-sizing: border-box
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	margin: 0;
+}
+
+.mySlides {
+	display: block;
+}
+
+.slide-images {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	padding: 0 15%;
+}
+
+/*---------------------------- Slideshow Events page */
+
+.slideshow-container {
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+.text {
+	color: #fff;
+	font-size: 25px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+	color: #fff;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/indicators */
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 10px 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+	.prev,
+	.next,
+	.text {
+		font-size: 11px
+	}
 }
 
 /*--------------------------Music page section audio*/
@@ -236,7 +368,7 @@ blockquote.members {
 	border: black 1px solid;
 	display: block;
 	background-color: rgb(43, 194, 83);
-	background-image: linear-gradient( center bottom,
+	background-image: linear-gradient( center, bottom,
 	rgb(43, 194, 83) 37%,
 	rgb(84, 240, 84) 69%);
 	box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
@@ -265,13 +397,14 @@ blockquote.members {
 	margin-top: 8px;
 	vertical-align: middle;
 }
+
 /*-------------------------EVENTS---------*/
 
-.mySlides{
-	display:none;
+.mySlides {
+	display: none;
 }
 
-.display-bottommiddle{
+.display-bottommiddle {
 	margin-top: 10px;
 	margin-bottom: 0;
 	border-bottom: 0;
@@ -279,18 +412,21 @@ blockquote.members {
 	font-size: 12px;
 }
 
-.slideshow-title{
-	font-size:28px;
+.slideshow-title {
+	font-size: 28px;
 	text-align: center;
 }
-.block-location{
+
+.block-location {
 	font-family: fantasy;
-	font-size:25px;
+	font-size: 25px;
 	text-align: center;
 }
-.general-sub p{
-	font-size:38px;
+
+.general-sub p {
+	font-size: 38px;
 }
+
 /*-------------------------FOOTER-*/
 
 /*--style the font for the social links*/
@@ -321,9 +457,8 @@ It's a bit small.*/
 footer .subscribe i {
 	color: #cf1407;
 	text-align: center;
-	font-size:12px;
+	font-size: 12px;
 	padding-left: 5px;
-
 }
 
 /*Create our custom class called social-links
@@ -331,7 +466,6 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 .social-links {
 	padding-bottom: 15px;
-
 }
 
 .social-links li a i {
@@ -348,8 +482,6 @@ So the idea is we're going to use a border to create a perfect circle around the
 	-moz-transition: all 0.35s ease-in-out;
 	-webkit-transition: all 0.35s ease-in-out;
 	-o-transition: all 0.35s ease-in-out;
-
-
 }
 
 .social-links li a i:hover {
@@ -380,6 +512,7 @@ So the idea is we're going to use a border to create a perfect circle around the
 }
 
 @media screen and (min-width:800px) {
+
 	.menubar span {
 		font-size: 1em;
 	}
@@ -423,6 +556,13 @@ So the idea is we're going to use a border to create a perfect circle around the
 		/* Royal blue colour for menu buttons for laptop*/
 		height: 75px;
 	}
+	img {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		padding: 0 15%;
+	}
 	.flex-container>div>iframe {
 		width: 225px;
 		height: 225px;
@@ -432,23 +572,23 @@ So the idea is we're going to use a border to create a perfect circle around the
 		font-size: 1.2em;
 		text-align: center;
 	}
-	
+
 	footer {
-	background-color: #cf1407;
-	color: #121212;
-	min-height: 115px;
-	font-size: 18px;
-	margin: 0;
-}
+		background-color: #cf1407;
+		color: #121212;
+		min-height: 115px;
+		font-size: 18px;
+		margin: 0;
+	}
 
 	footer .subscribe i {
-	color: #5878ea;
-	text-align: center;
-	font-size:18px;
-	padding-left: 5px;
+		color: #5878ea;
+		text-align: center;
+		font-size: 18px;
+		padding-left: 5px;
 
-}
-	
+	}
+
 	.social-links li a i:hover {
 		background-color: #5878ea;
 
