@@ -41,7 +41,7 @@ images but allows the it to only go as wide as the original image to keep qualit
 
 .bglogo {
 	/* Full height */
-	max-height:100%;
+	max-height: 100%;
 
 	/* Center and scale the image nicely */
 	background-position: center;
@@ -50,11 +50,6 @@ images but allows the it to only go as wide as the original image to keep qualit
 }
 
 /*--------------------------Menu bar-------*/
-
-header{
-	width:100%;
-	
-}
 
 .menubar {
 	color: #966f33;
@@ -141,16 +136,22 @@ display as block so that it occupies parent container*/
 /*------------------------ Containers */
 
 .container-wrapper {
-	max-height: 100%;
-	position: center;
+	height: 100%;
+	position: relative;
 	margin-top: 20px;
-	border-bottom-style: groove;
+	margin-bottom: 25px;
 	color: blue;
+}
+
+.container-wrapper-events {
+	height: 100%;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	color: red;
 }
 
 .content-container {
 	text-align: center;
-	margin-left: 15px;
 	margin-top: 60px;
 	padding-top: 25px;
 	padding-bottom: 75px;
@@ -182,6 +183,7 @@ display as block so that it occupies parent container*/
 	width: 200px;
 	height: 200px;
 	border-radius: 45%;
+	margin-left: 25px;
 }
 
 .blockquote {
@@ -191,16 +193,16 @@ display as block so that it occupies parent container*/
 
 /* -------------Image Gallery on Events page*/
 
-body {
-	font-family: Verdana, sans-serif;
-	margin: 0;
+* {
+	box-sizing: border-box;
 }
 
 .mySlides {
-	display: block;
+	display: none
 }
 
 .slide-images {
+	vertical-align: middle;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -212,7 +214,7 @@ body {
 
 .slideshow-container {
 	max-width: 1000px;
-	position: center;
+	position: relative;
 	margin: auto;
 }
 
@@ -228,7 +230,7 @@ body {
 	margin-top: -22px;
 	color: white;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 22px;
 	transition: 0.6s ease;
 	border-radius: 0 3px 3px 0;
 }
@@ -236,7 +238,7 @@ body {
 /* Position the "next button" to the right */
 
 .next {
-	right: 0;
+	right: 10;
 	border-radius: 3px 0 0 3px;
 }
 
@@ -520,7 +522,7 @@ So the idea is we're going to use a border to create a perfect circle around the
 		/* Royal blue colour for menu buttons in mobile*/
 		height: 75px;
 	}
-.bglogo img {
+	.bglogo img {
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: center;
@@ -551,7 +553,7 @@ So the idea is we're going to use a border to create a perfect circle around the
 		/* Royal blue colour for menu buttons for laptop*/
 		height: 75px;
 	}
-.bglogo img {
+	.bglogo img {
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
