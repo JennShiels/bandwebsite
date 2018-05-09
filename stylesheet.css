@@ -9,7 +9,7 @@ html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background: url("/Assets/Images/backgroundtile.jpg") repeat;
+	background: url("./Images/backgroundtile.jpg") repeat;
 }
 
 /*----set the text transform to be uppercase
@@ -41,7 +41,7 @@ images but allows the it to only go as wide as the original image to keep qualit
 
 .bglogo {
 	/* Full height */
-	height: 50%;
+	max-height:100%;
 
 	/* Center and scale the image nicely */
 	background-position: center;
@@ -50,6 +50,11 @@ images but allows the it to only go as wide as the original image to keep qualit
 }
 
 /*--------------------------Menu bar-------*/
+
+header{
+	width:100%;
+	
+}
 
 .menubar {
 	color: #966f33;
@@ -136,15 +141,16 @@ display as block so that it occupies parent container*/
 /*------------------------ Containers */
 
 .container-wrapper {
-	height: 100%;
-	position: relative;
+	max-height: 100%;
+	position: center;
 	margin-top: 20px;
 	border-bottom-style: groove;
 	color: blue;
 }
 
 .content-container {
-
+	text-align: center;
+	margin-left: 15px;
 	margin-top: 60px;
 	padding-top: 25px;
 	padding-bottom: 75px;
@@ -171,31 +177,19 @@ display as block so that it occupies parent container*/
 
 /*-----------------------Images for band members info*/
 
-.emoji {
-	margin-top: 0;
-	border-radius: 25%;
-}
-
-img {
-	max-width: 100%;
+.rounded-images {
 	vertical-align: middle;
+	width: 200px;
+	height: 200px;
+	border-radius: 45%;
 }
 
-/*----------home page--- Band Member info */
-
-.members {
-	border-left: 0;
-}
-
-.blocks {
+.blockquote {
+	margin: 0;
 	background-color: #c48b1a;
 }
 
 /* -------------Image Gallery on Events page*/
-
-* {
-	box-sizing: border-box
-}
 
 body {
 	font-family: Verdana, sans-serif;
@@ -207,19 +201,20 @@ body {
 }
 
 .slide-images {
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-	padding: 0 15%;
+	padding: 0 15px;
 }
 
 /*---------------------------- Slideshow Events page */
 
-/* slideshow-container {
+.slideshow-container {
 	max-width: 1000px;
-	position: relative;
+	position: center;
 	margin: auto;
-}*/
+}
 
 /* Next & previous buttons */
 
@@ -292,7 +287,7 @@ body {
 	background-color: #717171;
 }
 
-/* Fading animation */
+/* Fading animation from W3schools.com */
 
 .fade {
 	-webkit-animation-name: fade;
@@ -525,11 +520,11 @@ So the idea is we're going to use a border to create a perfect circle around the
 		/* Royal blue colour for menu buttons in mobile*/
 		height: 75px;
 	}
-	img {
+.bglogo img {
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: center;
-		padding: 0 15%;
+		padding: 0 15px;
 	}
 
 	footer .subscribe i {
@@ -556,12 +551,12 @@ So the idea is we're going to use a border to create a perfect circle around the
 		/* Royal blue colour for menu buttons for laptop*/
 		height: 75px;
 	}
-	img {
+.bglogo img {
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center;
-		padding: 0 15%;
+		padding: 0 15px;
 	}
 	.flex-container>div>iframe {
 		width: 225px;
