@@ -74,6 +74,24 @@ images but allows the it to only go as wide as the original image to keep qualit
 	float: left;
 }
 
+/* Target font awesome icons */
+.menubutton a {
+	font-size: 12px;
+	width: 100%;
+	text-decoration: none;
+	color: #333333;
+	height: 45px;
+}
+
+/* Target the icons themselves adjusting their position size etc
+display as block so that it occupies parent container*/
+
+.menubutton a i {
+	padding-top: 5px;
+	display: block;
+	color: #333333;
+}
+
 /* Target span text ie. Home music event and contact*/
 
 .menubar span {
@@ -87,34 +105,14 @@ images but allows the it to only go as wide as the original image to keep qualit
 	letter-spacing: 2px;
 }
 
-/* Target font awesome icons */
-
-.menubutton a {
-	font-size: 12px;
-	width: 100%;
-	text-decoration: none;
-	color: #333333;
-	height: 45px;
-}
-
-/* Target the icons themselves adjusting their position size etc
-display as block so that it occupies parent container*/
-
-.menuitem a i {
-	padding-top: 5px;
-	display: block;
-	color: #333333;
-}
-
 /*--------------------------Hvr.css* ----- */
 
 /*Targeting the hvr class- set the default colour using rgba which is colours & transparency*/
 
 .hvr-sweep-to-bottom:before {
-	background: rgba(0, 0, 0, 0.25);
-	height: 75px;
+	background: rgba(0, 0, 0, 0.2);
+	height: 120px;
 }
-
 /*---------------------------MUSIC PAGE----flexboxes for videos and images*/
 
 .flex-container {
@@ -148,7 +146,6 @@ display as block so that it occupies parent container*/
 	position: relative;
 	margin-top: 20px;
 	margin-bottom: 25px;
-	padding: 15px;
 	color: blue;
 }
 
@@ -224,7 +221,7 @@ display as block so that it occupies parent container*/
 
 .slide-images {
 	width: 650px;
-	height:550;
+	height:550px;
 	padding-top: 15px;
 	margin-left: 25%;
 	margin-bottom:100px;
@@ -306,7 +303,7 @@ display as block so that it occupies parent container*/
 	border: black 1px solid;
 	display: block;
 	background-color: rgb(43, 194, 83);
-	background-image: linear-gradient( center, bottom,
+	background-image: linear-gradient(center, bottom,
 	rgb(43, 194, 83) 37%,
 	rgb(84, 240, 84) 69%);
 	box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
