@@ -61,6 +61,7 @@ images but allows the it to only go as wide as the original image to keep qualit
 	font-size-adjust: inherit;
 	font-family: fantasy;
 	margin-top: .5%;
+	margin-bottom:25px;
 }
 
 .menubutton {
@@ -188,20 +189,6 @@ display as block so that it occupies parent container*/
 	color: red;
 }
 
-.subtitle i {
-	color: #fff;
-	text-align: center;
-	font-size: 18px;
-	padding-left: 5px;
-}
-
-.display {
-	color: blue;
-	text-align: center;
-	font-size: 18px;
-	padding-left: 5px;
-}
-
 /*-----------------------Images for band members info*/
 
 .rounded-images {
@@ -217,19 +204,27 @@ display as block so that it occupies parent container*/
 
 }
 
+
 /*---------------------------- Slideshow&images Events page */
+.media{
+	text-align: center;
+	padding:50px;
+}
+.RBimages{
+	vertical-align: middle;
+	max-width:100%;
+	border-radius: 25%;
+	margin-left: 25px;
+}
 
 .slide-images {
 	width: 650px;
 	height:550px;
-	padding-top: 15px;
-	margin-left: 25%;
-	margin-bottom:100px;
+	margin:25%;
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-
 }
 
 .slideshow-container {
@@ -246,7 +241,6 @@ display as block so that it occupies parent container*/
 	font-size: 1.5em;
 }
 
-
 .block-location {
 	font-family: fantasy;
 	font-size: 25px;
@@ -257,12 +251,6 @@ display as block so that it occupies parent container*/
 	font-size: 38px;
 }
 
-.RBimages{
-	width:560px;
-	height:500px;
-	margin-left:25px;
-	float: left;
-	}
 
 /*--------------------------Music page section audio*/
 
@@ -349,10 +337,15 @@ our pushes beyond the 120px. But if not it will default to 120px again providing
 visual balance between the footer and say, the menu items above.*/
 
 footer {
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:100%;
 	background-color: #525252;
 	color: #fafafa;
 	min-height: 120px;
 	margin: 0;
+	
 }
 
 /*adding some styles to our icons
