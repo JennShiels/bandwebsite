@@ -1,3 +1,14 @@
+html,body {
+	position: relative;
+	min-height: 100vh;
+	background-color: #FFF0F5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,800|Exo:100,300,400,500,700,800");
 
 /*---repeat the tiled image to cover the whole background of any screen---*/
@@ -6,19 +17,10 @@
 
 body,
 html {
-	position: relative;
-	min-height: 100vh;
-	background-color: #FFF0F5;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 	height: 100%;
 	margin: 0;
 	padding: 0;
 	background: url("./Images/backgroundtile.jpg") repeat;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /*----set the text transform to be uppercase
@@ -267,7 +269,7 @@ display as block so that it occupies parent container*/
 .player {
 	position: relative;
 	
-.info {
+	.info {
 		position: absolute;
 		height: 60px;
 		top: 0;
@@ -311,13 +313,13 @@ display as block so that it occupies parent container*/
 				width: 10%;
 				transition: all .2s ease;
 			}
-
-		.active {
+		}
+		&.active {
 			top: -60px;
 			opacity: 1;
 			transition: all .5s ease;
 		}
-
+	}
 	.control-panel {
 		position: relative;
 		background-color: #fff;
@@ -336,7 +338,7 @@ display as block so that it occupies parent container*/
 			border-radius: 50%;
 			box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0);
 			transform: scale(1);
-			transition: all .5s ease;}
+			transition: all .5s ease;
 	
 			&::after {
 				content: '';
