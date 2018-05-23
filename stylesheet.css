@@ -64,8 +64,8 @@ images but allows the it to only go as wide as the original image to keep qualit
 	text-align: center;
 	font-size-adjust: inherit;
 	font-family: fantasy;
-	margin:0px;
-	
+	margin: 0px;
+
 }
 
 .menubutton {
@@ -115,7 +115,7 @@ display as block so that it occupies parent container*/
 /*Targeting the hvr class- set the default colour using rgba which is colours & transparency*/
 
 .hvr-sweep-to-bottom: before {
-	background:rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.2);
 	height: 120px;
 }
 
@@ -123,6 +123,7 @@ display as block so that it occupies parent container*/
 
 .flex-container {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
 	margin-bottom: 50px;
