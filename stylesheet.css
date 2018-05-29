@@ -12,10 +12,6 @@ html {
 	background: url("./Images/backgroundtile.jpg") repeat;
 }
 
-section {
-	text-align: center;
-}
-
 /*----set the text transform to be uppercase
 set the general-sub to 'Exo' font imported earlier--*/
 
@@ -160,13 +156,12 @@ display as block so that it occupies parent container*/
 
 .container-eventspage {
 	/* Full height */
-	margin: 0;
 	max-width: 100%;
 	/* Center and scale the image nicely */
 	height: auto !important;
 	background-size: cover;
 	text-align: center;
-	position: relative;
+	position: static;
 	background-repeat: no-repeat;
 }
 
@@ -185,27 +180,35 @@ display as block so that it occupies parent container*/
 
 .container-wrapper-events {
 	text-align: center;
-	height: 50%;
+	height: 25%;
 	position: relative;
 	margin-top: 20px;
-	margin-bottom: 25px;
+	margin-bottom: 0px;
 }
 
-.content-container-events {
+.flex-container-events {
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
 	margin-bottom: 50px;
-	margin-top: 15px;
 
 }
 
-.content-container-events>div {
+/* 5 columns side by side */
+
+.column {
+	flex: 1;
 	background-color: #cf1407;
 	margin: 10px;
-	padding: 5px;
 	font-size: 16px;
+	width: 20%;
+	height: 20%;
+}
+
+.democursor {
+	padding: 2%;
+	max-width:100%;
+	height:100%;
 }
 
 /* -----------------------Block dividers */
@@ -303,22 +306,24 @@ display as block so that it occupies parent container*/
 	color: #ffffff;
 	text-align: left;
 	font-size: 25px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
+	padding: 8px 12px 8px 12px;
+	margin-bottom: 10px;
 }
 
+
+/* Container for image text */
 .caption-container {
-	text-align: center;
-	background-color: #222;
-	padding: 2px 10px;
-	margin: 5px 25px 5px 25px;
-	color: white;
+  text-align: center;
+  background-color: #222;
+  padding: 15px 25px 15px 25px;
+  color: white;
 }
 
-#caption>p {
+#caption p {
+	padding:2%;
+	font-weight: 200;
 	font-size: 20px;
-	color: #FAFAFA;
+	color: #fff;
 }
 
 .row:after {
@@ -327,36 +332,28 @@ display as block so that it occupies parent container*/
 	clear: both;
 }
 
-/* Six columns side by side */
-
-.column {
-	float: left;
-	width: 15%;
-	margin: 2px;
-}
-
 /* Add a transparency effect for thumnbail images */
 
-.demo {
-	opacity: 0.6;
-}
-
-.active,
-.demo:hover {
+.democursor {
 	opacity: 1;
 }
 
-/*------------------------------Images Events page */
-
-.media {
-	text-align: center;
-	padding: 50px;
+.active,
+.democursor:hover {
+		background-color: rgba(0, 0, 0, 0.8);
 }
 
-.media-body {
-	background-color: lightblue;
-	width: 250px;
-	height: 300px;
+/*------------------------------Images& text Events page */
+.media p{
+	color:#FFFCCF;
+}
+.media {
+	margin-left: 10%;
+	text-align: center;
+	padding: 50px;
+	margin-bottom: 150px;
+	width: 90%;
+	height: 200px;
 	overflow: scroll;
 }
 

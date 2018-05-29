@@ -30,54 +30,50 @@
     </header>
 
     <!-- Slide Show -->
-    <section>
+   
         <div class="container-eventspage">
             <div class="content-container">
                 <div class="col-xs-12">
                     <div class="slide-images">
                         <div class="numbertext">1 / 3</div>
-                        <img src="/Images/duophoto.jpg" alt="Coyotes- Galway" style="width:90%">
+                        <img src="./Images/duophoto.jpg" alt="Coyotes- Galway" style="width:90%">
                     </div>
 
                     <div class="slide-images">
                         <div class="numbertext">2 / 3</div>
-                        <img src="/Images/cagonBecks.jpg" alt="An Pucan" style="width:90%">
+                        <img src="./Images/darkprofilepic.jpg" alt="An Pucan" style="width:90%">
                     </div>
 
                     <div class="slide-images">
                         <div class="numbertext">3 / 3</div>
-                        <img src="/Images/duet.jpg" alt="The Broken Jug- Ballina" style="width:90%">
+                        <img src="./Images/duet.jpg" alt="The Broken Jug- Ballina" style="width:90%">
                     </div>
 
-                    <a class="prev" onclick="plusSlides(-1)">
-                        <</a>
-                            <a class="next" onclick="plusSlides(1)">></a>
-
-                            <div class="caption-container">
+                    <div class="caption-container">
+                        <a class="prev" onclick="plusSlides(-1)">
+                            <</a>
                                 <p id="caption"></p>
-                            </div>
+                                <a class="next" onclick="plusSlides(1)">></a>
+                    </div>
 
-                            <div class="content-container-events">
-                                <div class=" column ">
-                                    <img class="demo cursor " src="/Images/duophoto.jpg " onclick="currentSlide(1) " alt="Coyotes- Galway " "width=200 height=200">
-                                </div>
-                                <div class="column ">
-                                    <img class="demo cursor " src="/Images/duet.jpg " onclick="currentSlide(3) " alt="The Broken Jug- Ballina " "width=200 height=200">
-                                </div>
-                                <div class="column ">
-                                    <img class="demo cursor " src="/Images/cagonBecks.jpg " onclick="currentSlide(2) " alt="An Pucan " "width=200 height=200">
-                                </div>
-                                <div class=" column ">
-                                    <img class="demo cursor " src="/Images/duophoto.jpg " onclick="currentSlide(1) " alt="Coyotes- Galway " "width=200 height=200">
-                                </div>
-                                <div class="column ">
-                                    <img class="demo cursor " src="/Images/cagonBecks.jpg" onclick="currentSlide(2) " alt="An Pucan " "width=200 height=200">
-                                </div>
-                            </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="flex-container-events">
+                        <div class=" column ">
+                            <img class="democursor " src="./Images/duophoto.jpg " onclick="currentSlide(1) " alt="Coyotes- Galway ">
+                        </div>
+                        <div class="column ">
+                            <img class="democursor " src="./Images/duet.jpg " onclick="currentSlide(3) " alt="The Broken Jug- Ballina ">
+                        </div>
+                        <div class="column ">
+                            <img class="democursor " src="./Images/darkprofilepic.jpg " onclick="currentSlide(2) " alt="An Pucan ">
+                        </div>
+                        <div class=" column ">
+                            <img class="democursor " src="./Images/duophoto.jpg " onclick="currentSlide(1) " alt="Coyotes- Galway ">
+                        </div>
+                        <div class="column ">
+                            <img class="democursor " src="./Images/duet.jpg " onclick="currentSlide(3) " alt="The Broken Jug- Ballina ">
+                            < </div>
+                        </div>
+   
 
     <!-- Band Description -->
     <div class="container-wrapper-events ">
@@ -95,7 +91,7 @@
                     <div class="media-left ">
                         <img src="./Images/Becks&Rory.jpg " alt="Rory and Becks " class="rounded-images ">
                     </div>
-                    <div class="media-body">
+                    <div class="media-body-event">
                         <blockquote class="members ">
                             <p>We are a two-piece band.Rebecca hails from Ballina in Mayo and is the female vocalist of the band. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
@@ -141,19 +137,22 @@ Make own class to set the text to uppercase in the h5 elements-->
             </div>
         </footer>
 
-       <script>
+        <script>
             var slideIndex = 1;
             showSlides(slideIndex);
+
             function plusSlides(n) {
                 showSlides(slideIndex += n);
             }
+
             function currentSlide(n) {
                 showSlides(slideIndex = n);
             }
+
             function showSlides(n) {
                 var i;
                 var slides = document.getElementsByClassName("slide-images ");
-                var dots = document.getElementsByClassName("demo ");
+                var dots = document.getElementsByClassName("democursor ");
                 var captionText = document.getElementById("caption ");
                 if (n > slides.length) { slideIndex = 1 }
                 if (n < 1) { slideIndex = slides.length }
