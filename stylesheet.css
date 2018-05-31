@@ -244,13 +244,10 @@ display as block so that it occupies parent container*/
 
 .blockquote {
 	margin: 0;
-
 }
-
 
 /*---------------------------- Slideshow
 /* Hide the images by default */
-
 .slide-images {
 	display: none;
 }
@@ -259,42 +256,6 @@ display as block so that it occupies parent container*/
 
 .cursor {
 	cursor: pointer;
-}
-
-/* Next & previous buttons */
-
-.prev,
-.next {
-	cursor: pointer;
-	color: white;
-	font-weight: bold;
-	font-size: 20px;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
-	-webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-
-.next {
-	margin-top: 0px;
-	right: 40%;
-	border-radius: 3px 0 0 3px;
-}
-
-/*position 'previous button' to the left*/
-
-.prev {
-	left: 40%;
-	border-radius: 3px 0 0 3px;
-}
-
-
-/* On hover, add a black background color with a little bit see-through */
-
-.prev:hover,
-.next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Number text (1/3 etc) */
@@ -308,23 +269,15 @@ display as block so that it occupies parent container*/
 	margin-bottom: 10px;
 }
 
+#locations {
+	color: #9C9A9C;
+	text-align: center;
+	padding: 10px 5px 10px 5px;
+	margin-bottom: 10px;
+}
 
 .numbertext>img{
 	margin-top:0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  color: white;
-}
-
-#caption p {
-	padding:2%;
-	font-weight: 200;
-	font-size: 20px;
-	color: #fff;
 }
 
 .row:after {
@@ -501,6 +454,7 @@ So the idea is we're going to use a border to create a perfect circle around the
 /*selected images for events page*/
 .flex-container-events {
 	flex-direction: column;
+	text-align:center;
 	margin-bottom: 50px;
 }
 .column {
@@ -529,14 +483,6 @@ So the idea is we're going to use a border to create a perfect circle around the
 	padding: 15px 10px 15px 10px;
 	margin: 17.5%;
 }
-/*position 'previous button' to the left*/
-
-.prev {
-	margin:0px;
-	left: 40%;
-	border-radius: 3px 0 0 3px;
-}
-
 
 @media screen and (min-width:800px) {
 	.bglogo img {
@@ -617,3 +563,4 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 	}
 }
+
