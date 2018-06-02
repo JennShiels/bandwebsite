@@ -126,8 +126,14 @@ display as block so that it occupies parent container*/
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
-	margin-bottom: 50px;
+	margin-bottom: 150px;
 
+}
+h1{ 
+	text-align:center;
+	color:Red;
+	font-family: fantasy;
+	
 }
 
 .flex-container>div {
@@ -140,30 +146,27 @@ display as block so that it occupies parent container*/
 .flex-container p {
 	font-family: fantasy;
 	color: #333;
-	font-size: 12px;
+	font-size: 18px;
 }
 
 /*------------------------ Containers */
 
 /*container home page*/
+
 .container-eventspage {
-	/* Full height */
-	max-width: 100%;
-	/* Center and scale the image nicely */
-	height: auto !important;
-	background-size: cover;
-	text-align: center;
-	position: static;
-	background-repeat: no-repeat;
+	height: 100%;
+	width: 95%;
+	margin: 15px 0 25 15px;
+	position: relative;
 }
 
-.content-container{
-	margin:5px;
-	padding:15%;
+.content-container {
+	margin: 5px;
+	padding: 15%;
 }
 
 .container-wrapper {
-	height: 50%;
+	height: 100%;
 	width: 95%;
 	margin-left: 15px;
 	margin-right: 15px;
@@ -174,6 +177,28 @@ display as block so that it occupies parent container*/
 }
 
 /*container events pages*/
+
+.container-wrapper-events {
+	text-align: center;
+	height: 50%;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.content-container-events>div {
+	background-color: #cf1407;
+	margin: 10px;
+	padding: 5px;
+	font-size: 16px;
+}
+
+.content-container {
+	text-align: center;
+	margin-top: 5%;
+	padding-top: 25px;
+	padding-bottom: 75px;
+}
 
 .flex-container-events {
 	display: flex;
@@ -196,37 +221,24 @@ display as block so that it occupies parent container*/
 .democursor {
 	opacity: 1;
 	padding: 2%;
-	max-width:100%;
-	height:50%;
+	max-width: 100%;
+	height: 50%;
 }
 
 .active,
 .democursor:hover {
-		background-color: rgba(0, 0, 0, 0.8);
-}
-
-.container-wrapper-events {
-	text-align: center;
-	height: 50%;
-	position: relative;
-	margin-top: 10px;
-	margin-bottom: 0px;
-}
-
-.content-container-events>div {
-	background-color: #cf1407;
-	margin: 10px;
-	padding: 5px;
-	font-size: 16px;
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 /*-------footer container*/
+
 .container-fluid {
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 15px;
 	padding-right: 15px;
 }
+
 /* -----------------------Block dividers */
 
 .blockquote p {
@@ -250,6 +262,7 @@ display as block so that it occupies parent container*/
 	text-align: center;
 	color: red;
 }
+
 /*-----------------------Images for band members info*/
 
 .rounded-images {
@@ -257,8 +270,7 @@ display as block so that it occupies parent container*/
 	width: 125px;
 	height: 125px;
 	border-radius: 45%;
-	text-align:left;
-	border-bottom-width: thin;
+	text-align: left;
 	border-color: white;
 }
 
@@ -268,6 +280,7 @@ display as block so that it occupies parent container*/
 
 /*---------------------------- Slideshow
 /* Hide the images by default */
+
 .slide-images {
 	display: none;
 }
@@ -297,8 +310,8 @@ display as block so that it occupies parent container*/
 	margin-bottom: 10px;
 }
 
-.numbertext>img{
-	margin-top:0;
+.numbertext>img {
+	margin-top: 0;
 }
 
 .row:after {
@@ -308,9 +321,11 @@ display as block so that it occupies parent container*/
 }
 
 /*------------------------------Images& text Events page */
-.media p{
-	color:#FFFCCF;
+
+.media p {
+	color: #FFFCCF;
 }
+
 .media {
 	margin-left: 10%;
 	text-align: center;
@@ -359,19 +374,6 @@ display as block so that it occupies parent container*/
 
 /*--------------------------Music page section audio------*/
 
-/*----------------------------audio player*/
-
-#lars {
-	background-image: Url("./Images/Guitar hands.jpg");
-	background-size: cover;
-	width: 1000px;
-	height: 475px;
-}
-
-#tony {
-	width: 1000px;
-	height: 500px;
-}
 
 /*-------------------------FOOTER-*/
 
@@ -460,34 +462,40 @@ So the idea is we're going to use a border to create a perfect circle around the
 		letter-spacing: 1.5px;
 	}
 }
+
 /*selected images for events page*/
+
 .flex-container-events {
 	flex-direction: column;
-	text-align:center;
+	text-align: center;
 	margin-bottom: 50px;
 }
+
 .column {
 	flex: 1;
 	background-color: #cf1407;
 	width: 90%;
 	height: 20%;
 }
+
 .democursor {
 	padding: 5%;
-	max-width:100%;
+	max-width: 100%;
 }
 
 /*------adjust slide-images to smaller screens*/
 
 /* Number text (1/3 etc) */
+
 .numbertext {
 	background-color: #cf1407;
-    font-size: 12px;
+	font-size: 12px;
 	padding: 2px 6px 2px 6px;
 	margin-bottom: 10px;
 }
+
 .slide-images {
-	float:left;
+	float: left;
 	max-width: 65%;
 	padding: 15px 10px 15px 10px;
 	margin: 17.5%;
@@ -572,4 +580,3 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 	}
 }
-
