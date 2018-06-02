@@ -146,6 +146,14 @@ display as block so that it occupies parent container*/
 /*------------------------ Containers */
 
 /*container home page*/
+
+.container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 .container-eventspage {
 	/* Full height */
 	max-width: 100%;
@@ -155,11 +163,6 @@ display as block so that it occupies parent container*/
 	text-align: center;
 	position: static;
 	background-repeat: no-repeat;
-}
-
-.content-container{
-	margin:5px;
-	padding:15%;
 }
 
 .container-wrapper {
@@ -175,58 +178,39 @@ display as block so that it occupies parent container*/
 
 /*container events pages*/
 
+.container-wrapper-events {
+	text-align: center;
+	height: 25%;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
 .flex-container-events {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	margin-bottom: 50px;
+
 }
+
+/* 5 columns side by side */
 
 .column {
 	flex: 1;
 	background-color: #cf1407;
 	margin: 10px;
 	font-size: 16px;
-	width: 25%;
+	width: 20%;
 	height: 20%;
 }
 
-/* Add a transparency effect for thumnbail images */
-
 .democursor {
-	opacity: 1;
 	padding: 2%;
 	max-width:100%;
-	height:50%;
+	height:100%;
 }
 
-.active,
-.democursor:hover {
-		background-color: rgba(0, 0, 0, 0.8);
-}
-
-.container-wrapper-events {
-	text-align: center;
-	height: 50%;
-	position: relative;
-	margin-top: 10px;
-	margin-bottom: 0px;
-}
-
-.content-container-events>div {
-	background-color: #cf1407;
-	margin: 10px;
-	padding: 5px;
-	font-size: 16px;
-}
-
-/*-------footer container*/
-.container-fluid {
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-}
 /* -----------------------Block dividers */
 
 .blockquote p {
@@ -243,31 +227,31 @@ display as block so that it occupies parent container*/
 
 .page-header {
 	font-size: 18px;
-	font-family: Jazz LET, fantasy;
 	margin-top: 5%;
 	margin-bottom: 0;
 	border-bottom: 0;
 	text-align: center;
 	color: red;
 }
+
 /*-----------------------Images for band members info*/
 
 .rounded-images {
 	vertical-align: middle;
-	width: 125px;
-	height: 125px;
+	width: 200px;
+	height: 200px;
 	border-radius: 45%;
-	text-align:left;
-	border-bottom-width: thin;
-	border-color: white;
+	margin-left: 25px;
 }
 
 .blockquote {
 	margin: 0;
+
 }
 
 /*---------------------------- Slideshow
 /* Hide the images by default */
+
 .slide-images {
 	display: none;
 }
@@ -278,7 +262,43 @@ display as block so that it occupies parent container*/
 	cursor: pointer;
 }
 
-/* Number text (1/4 etc) */
+/* Next & previous buttons */
+
+.prev,
+.next {
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+	margin-top: 0px;
+	right: 40%;
+	border-radius: 3px 0 0 3px;
+}
+
+/*position 'previous button' to the left*/
+
+.prev {
+	left: 40%;
+	border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
 
 .numbertext {
 	background-color: #333;
@@ -289,22 +309,22 @@ display as block so that it occupies parent container*/
 	margin-bottom: 10px;
 }
 
-#locations {
-	color: #9C9A9C;
-	font-family: Jazz LET fantasy;
-	text-align: center;
-	padding: 10px 5px 10px 5px;
-	margin-bottom: 10px;
-}
-
-.numbertext>img{
-	margin-top:0;
-}
 
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+/* Add a transparency effect for thumnbail images */
+
+.democursor {
+	opacity: 1;
+}
+
+.active,
+.democursor:hover {
+		background-color: rgba(0, 0, 0, 0.8);
 }
 
 /*------------------------------Images& text Events page */
@@ -314,9 +334,10 @@ display as block so that it occupies parent container*/
 .media {
 	margin-left: 10%;
 	text-align: center;
+	padding: 50px;
 	margin-bottom: 150px;
 	width: 90%;
-	height: 20%;
+	height: 200px;
 	overflow: scroll;
 }
 
@@ -337,6 +358,11 @@ display as block so that it occupies parent container*/
 	background-attachment: fixed;
 }
 
+.slideshow-container {
+	width: 100%;
+	position: relative;
+	margin: auto;
+}
 
 .display-bottommiddle {
 	margin-top: 10px;
@@ -460,38 +486,6 @@ So the idea is we're going to use a border to create a perfect circle around the
 		letter-spacing: 1.5px;
 	}
 }
-/*selected images for events page*/
-.flex-container-events {
-	flex-direction: column;
-	text-align:center;
-	margin-bottom: 50px;
-}
-.column {
-	flex: 1;
-	background-color: #cf1407;
-	width: 90%;
-	height: 20%;
-}
-.democursor {
-	padding: 5%;
-	max-width:100%;
-}
-
-/*------adjust slide-images to smaller screens*/
-
-/* Number text (1/3 etc) */
-.numbertext {
-	background-color: #cf1407;
-    font-size: 12px;
-	padding: 2px 6px 2px 6px;
-	margin-bottom: 10px;
-}
-.slide-images {
-	float:left;
-	max-width: 65%;
-	padding: 15px 10px 15px 10px;
-	margin: 17.5%;
-}
 
 @media screen and (min-width:800px) {
 	.bglogo img {
@@ -572,4 +566,3 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 	}
 }
-
