@@ -129,11 +129,11 @@ display as block so that it occupies parent container*/
 	margin-bottom: 150px;
 
 }
-h1{ 
-	text-align:center;
-	color:Red;
+
+h1 {
+	text-align: center;
+	color: Red;
 	font-family: fantasy;
-	
 }
 
 .flex-container>div {
@@ -154,8 +154,8 @@ h1{
 /*container home page*/
 
 .container-eventspage {
-	height: 100%;
-	width: 95%;
+	height: 50%;
+	width: 90%;
 	margin: 15px 0 25 15px;
 	position: relative;
 }
@@ -164,7 +164,11 @@ h1{
 	margin: 5px;
 	padding: 15%;
 }
-
+.content-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .container-wrapper {
 	height: 100%;
 	width: 95%;
@@ -180,9 +184,9 @@ h1{
 
 .container-wrapper-events {
 	text-align: center;
-	height: 50%;
+	height: 35%;
 	position: relative;
-	margin-top: 10px;
+	margin-top: 10%;
 	margin-bottom: 0px;
 }
 
@@ -199,36 +203,34 @@ h1{
 	padding-top: 25px;
 	padding-bottom: 75px;
 }
+
 /*-------------select images to change photo gallery on events page*/
+
 .flex-container-events {
-	display: flex;
-	flex-wrap:wrap;
-	flex-direction: row;
-	justify-content: center;
-	margin-bottom: 50px;
-	height: 25px;
+	height: 250px;
+	width: 100%;
+	flex-direction: column;
+	text-align: center;
 }
 
-.flex-container-events>column {
-	flex: 1;
+.column {
 	background-color: #cf1407;
-	margin: 10px;
-	font-size: 16px;
-	width: 25%;
-	height: 20%;
+	float: left;
+	width: 20%;
+	margin-left: 5%;
 }
 
 /* Add a transparency effect for thumnbail images */
 
 .democursor {
-	opacity: 1;
-	max-width: 100%;
-	height: 50%;
+	opacity: 0.8;
+	width: 100%;
+	height: 100%;
 }
 
 .active,
 .democursor:hover {
-	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 1;
 }
 
 /*-------footer container*/
@@ -292,7 +294,25 @@ h1{
 	cursor: pointer;
 }
 
-/* Number text (1/4 etc) */
+
+
+/*------adjust slide-images to smaller screens*/
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+	background-color: #cf1407;
+	font-size: 12px;
+	padding: 2px 6px 2px 6px;
+	margin-bottom: 10px;
+}
+
+.slide-images {
+	float: left;
+	max-width: 65%;
+	padding: 15px 10px 15px 10px;
+	margin: 17.5%;
+}
 
 .numbertext {
 	background-color: #333;
@@ -303,7 +323,7 @@ h1{
 	margin-bottom: 10px;
 }
 
-#locations {
+.locations {
 	color: #9C9A9C;
 	font-family: Jazz LET fantasy;
 	text-align: center;
@@ -332,7 +352,7 @@ h1{
 	text-align: center;
 	margin-bottom: 150px;
 	width: 90%;
-	height: 20%;
+	height: 275px;
 	overflow: scroll;
 }
 
@@ -373,8 +393,47 @@ h1{
 }
 
 
-/*--------------------------Music page section audio------*/
+/*--------------------------Contact form------*/
 
+h3 {
+	font-size: 26px;
+	text-align: center;
+	color: Red;
+	font-family: fantasy;
+}
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+.container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	margin-bottom: 150px;
+}
 
 /*-------------------------FOOTER-*/
 
@@ -448,75 +507,17 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 /*-------------------------Media Queries---*/
 
-@media screen and (max-width:800px) {
-	.menubar {
-		color: #93b0c3;
-		/*Darkgrey*/
-	}
-	.menubutton {
-		background: #cf1407;
-		/* Fire red colour for menu buttons in mobile*/
-	}
-	.menubar span {
-		font-size: 14px;
-		font-weight: 100;
-		letter-spacing: 1.5px;
-	}
-}
-
-/*selected images for events page*/
-
-.flex-container-events {
-	flex-direction: column;
-	text-align: center;
-	margin-bottom: 50px;
-}
-
-.column {
-	flex: 1;
-	background-color: #cf1407;
-	width: 90%;
-	height: 20%;
-}
-
-.democursor {
-	padding: 5%;
-	max-width: 100%;
-}
-
-/*------adjust slide-images to smaller screens*/
-
-/* Number text (1/3 etc) */
-
-.numbertext {
-	background-color: #cf1407;
-	font-size: 12px;
-	padding: 2px 6px 2px 6px;
-	margin-bottom: 10px;
-}
-
-.slide-images {
-	float: left;
-	max-width: 65%;
-	padding: 15px 10px 15px 10px;
-	margin: 17.5%;
-}
-
-@media screen and (max-width: 479px) {
-     /* start of phone styles */
-	.bglogo img {
-		margin-left: 7.5%;
-		text-align: center;
-	}
-}
-	
 @media screen and (min-width:479px) {
 	.bglogo img {
-		
+		width: 85%;
 		margin-left: 7.5%;
 		text-align: center;
 	}
-	
+	.blockquote p {
+		font-size: 30px;
+		color: #FEE830;
+		/*gold*/
+	}
 	.menubar span {
 		font-size: 1em;
 	}
@@ -529,7 +530,7 @@ So the idea is we're going to use a border to create a perfect circle around the
 		/* Royal blue colour for menu buttons in mobile*/
 		height: 75px;
 	}
-		.flex-container>div>iframe {
+	.flex-container>div>iframe {
 		width: 225px;
 		height: 225px;
 		font-size: 24px;
@@ -549,8 +550,24 @@ So the idea is we're going to use a border to create a perfect circle around the
 	}
 }
 
+@media screen and (max-width:800px) {
+	.menubar {
+		color: #93b0c3;
+		/*Darkgrey*/
+	}
+	.menubutton {
+		background: #cf1407;
+		/* Fire red colour for menu buttons in mobile*/
+	}
+	.menubar span {
+		font-size: 14px;
+		font-weight: 100;
+		letter-spacing: 1.5px;
+	}
+}
+
 @media screen and (min-width:1200px) {
-	
+
 	.menubar span {
 		font-size: 1em;
 		letter-spacing: 1.5px;
