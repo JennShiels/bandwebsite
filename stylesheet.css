@@ -119,6 +119,7 @@ display as block so that it occupies parent container*/
 /*---------------------------MUSIC PAGE----flexboxes for videos and images*/
 
 .flex-container {
+	margin-top:5px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap:wrap;
@@ -428,6 +429,12 @@ So the idea is we're going to use a border to create a perfect circle around the
 	}
 }
 
+.flex-container {
+	justify-content: space-around;
+	width:50%;
+	
+}
+
 @media screen and (min-width:800px) {
 	.bglogo img {
 		width: 85%;
@@ -435,6 +442,14 @@ So the idea is we're going to use a border to create a perfect circle around the
 		text-align: center;
 	}
 
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: center;
+	width: 100%;
+}
+	
 	.menubar span {
 		font-size: 1em;
 	}
