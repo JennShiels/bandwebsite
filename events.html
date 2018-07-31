@@ -2,32 +2,32 @@
 <html lang="en">
 
 <head>
-	<meta name="author" content="Script Tutorials" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-	<link rel="stylesheet" href="/stylesheet.css" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>The Dropouts Galway</title>
+    <meta name="author" content="Script Tutorials" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="/stylesheet.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Dropouts Galway</title>
 </head>
 
 <body>
-	<header>
-		<div class="menubar">
-			<div class="menubutton">
-				<a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
-			</div>
-			<div class="menubutton">
-				<a href="music.html" class="hvr-sweep-to-bottom"><i class="fa fa-music" aria-hidden="true"></i><span>Music</span></a>
-			</div>
-			<div class="menubutton">
-				<a href="events.html" class="hvr-sweep-to-bottom"><i class="fa fa-calendar" aria-hidden="true"></i><span>Events</span></a>
-			</div>
-			<div class="menubutton">
-				<a href="contact.html" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-phone" aria-hidden="true"></i><span>Contact</span></a>
-			</div>
-		</div>
-	</header>
+    <header>
+        <div class="menubar">
+            <div class="menubutton">
+                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+            </div>
+            <div class="menubutton">
+                <a href="music.html" class="hvr-sweep-to-bottom"><i class="fa fa-music" aria-hidden="true"></i><span>Music</span></a>
+            </div>
+            <div class="menubutton">
+                <a href="events.html" class="hvr-sweep-to-bottom"><i class="fa fa-calendar" aria-hidden="true"></i><span>Events</span></a>
+            </div>
+            <div class="menubutton">
+                <a href="contact.html" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-phone" aria-hidden="true"></i><span>Contact</span></a>
+            </div>
+        </div>
+    </header>
 
     <!-- Slide Show -->
 
@@ -56,21 +56,19 @@
                 </div>
             </div>
             <div class="flex-container-events">
-                <div class="col-xs-12 col-md-12">
                 <div class="column">
-                    <img class="democursor " src="./Images/duophoto.jpg " onclick="currentSlide(1) " alt="Coyotes- Galway ">
+                    <img class="democursor" src="./Images/duophoto.jpg " onclick="currentSlide(1)" alt="Coyotes- Galway ">
                 </div>
                 <div class="column">
-                    <img class="democursor " src="./Images/darkprofilepic.jpg " onclick="currentSlide(2) " alt="An Pucan ">
+                    <img class="democursor" src="./Images/darkprofilepic.jpg " onclick="currentSlide(2)" alt="An Pucan ">
                 </div>
                 <div class="column">
-                    <img class="democursor " src="./Images/duet.jpg " onclick="currentSlide(3) " alt="The Broken Jug- Ballina ">
+                    <img class="democursor" src="./Images/duet.jpg " onclick="currentSlide(3)" alt="The Broken Jug- Ballina ">
                 </div>
                 <div class="column">
-                    <img class="democursor " src="./Images/darkprofilepic.jpg " onclick="currentSlide(4) " alt="An Pucan ">
+                    <img class="democursor" src="./Images/darkprofilepic.jpg " onclick="currentSlide(4)" alt="An Pucan ">
                 </div>
             </div>
-        </div>
         </div>
     </div>
 
@@ -165,13 +163,13 @@ Make own class to set the text to uppercase in the h5 elements-->
             if (n > slides.length) { slideIndex = 1 }
             if (n < 1) { slideIndex = slides.length }
             for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none ";
+                slides[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active ", " ");
+                dots[i].className = dots[i].className.replace(" active", "");
             }
-            slides[slideIndex - 1].style.display = "block ";
-            dots[slideIndex - 1].className += " active ";
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
             captionText.innerHTML = dots[slideIndex - 1].alt;
         }
     </script>
