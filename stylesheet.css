@@ -176,8 +176,8 @@ display as block so that it occupies parent container*/
 .blockquote p {
 	
 	font-size: 25px;
-	color: #c48b1a;
-	/*gold*/
+	color: #0892d0;
+	/*blue*/
 }
 
 .block text-uppercase {
@@ -221,6 +221,7 @@ display as block so that it occupies parent container*/
 
 .blockquote {
 	margin: 0;
+	overflow:scroll;
 
 }
 
@@ -499,7 +500,7 @@ So the idea is we're going to use a border to create a perfect circle around the
 	}
 
 	footer {
-		background-color: #cf1407;
+	
 		color: #121212;
 		min-height: 115px;
 		font-size: 18px;
