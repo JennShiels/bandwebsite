@@ -149,24 +149,21 @@ display as block so that it occupies parent container*/
 }
 
 .container-eventspage{
-	
+	/*19/08*/
 }
 
 /*-----------------------------------MUSIC PAGE CONTAINERS----------*/
-
-.music-container-wrapper {
-	height: 100%;
-	width: 95%;
-	margin: 0px;
-	position: relative;
-	padding: 15px;
-	color: blue;
+.content-container-music {
+	text-align: center;
+	margin-top: 25px;
+	
 }
 
-.music-container {                      /*  16/08/18   */
-	text-align: center;
-	margin:0px;
-	padding: 5px;
+video {
+	padding: 10px;
+    max-width: 100%;
+    height: auto;
+    padding:50px;
 }
 
 /*---------------------------MUSIC PAGE----flexboxes for videos and images*/
@@ -190,6 +187,19 @@ display as block so that it occupies parent container*/
 	font-family: fantasy;
 	color: #333;
 	font-size: 1.5em;
+}
+/*----------------------------audio player-----------*/
+
+#lars {
+	background-image: Url("./Images/Guitar hands.jpg");
+	background-size: cover;
+	width: 1000px;
+	height: 475px;
+}
+
+#tony {
+	width: 1000px;
+	height: 500px;
 }
 
 /* -----------------------Block dividers */
@@ -428,7 +438,14 @@ So the idea is we're going to use a border to create a perfect circle around the
 	flex-direction: column;
 	flex-wrap:wrap;
 	justify-content: space-around;
-	
+}
+
+.flex-container>div {
+	background-color: #cf1407;
+	margin: 10px;
+	padding: 5px;
+	font-size: 16px;
+	max-width: 100%;
 }
 
 @media screen and (min-width:800px) {
@@ -495,9 +512,7 @@ So the idea is we're going to use a border to create a perfect circle around the
 	}
 
 	footer {
-	
 		color: #121212;
-		min-height: 115px;
 		font-size: 18px;
 		margin: 0;
 	}
