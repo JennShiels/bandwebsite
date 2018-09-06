@@ -115,23 +115,47 @@ display as block so that it occupies parent container*/
 	background: rgba(0, 0, 0, 0.25);
 	height: 75px;
 }
+/*--------------------------------------HOME PAGE------------------*/
+/*-------------------------------container home page*/
 
-/*------------------------ Containers */
-
-/*container home page*/
-
-.container-wrapper {
+.container-wrapper-home {
 	height: 100%;
-	width: 95%;
-	margin-left: 15px;
-	margin-right: 15px;
+	width: 100%;
 	position: relative;
-	margin-top: 20px;
-	margin-bottom: 25px;
-	padding: 15px;
-	color: blue;
+	color: #fff;
+	text-align: center;
+	overflow: scroll;
+	margin:0px;
 }
 
+h2{
+	color:red;
+}
+.blockquote p {
+	font-size: 25px;
+	font-style: italic;
+	color: #fff;
+	/*white text*/
+}
+
+.block text-uppercase {
+	font-size: 15px;
+}
+
+/*Images for band members info*/
+
+.rounded-images {
+	text-align: left;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.blockquote {
+	margin: 0;
+
+}
+/*-----------------------EVENTS PAGE------------------------*/
 /*------------------------------------container events pages*/
 
 .container-wrapper-events {
@@ -142,6 +166,7 @@ display as block so that it occupies parent container*/
 }
 
 .content-container {
+	height: 100%;
 	text-align: center;
 	margin-top: 5%;
 	padding-top: 25px;
@@ -153,17 +178,12 @@ display as block so that it occupies parent container*/
 }
 
 /*-----------------------------------MUSIC PAGE CONTAINERS----------*/
+
+
 .content-container-music {
 	text-align: center;
 	margin-top: 25px;
 	
-}
-
-video {
-	padding: 10px;
-    max-width: 100%;
-    height: auto;
-    padding:50px;
 }
 
 /*---------------------------MUSIC PAGE----flexboxes for videos and images*/
@@ -188,32 +208,6 @@ video {
 	color: #333;
 	font-size: 1.5em;
 }
-/*----------------------------audio player-----------*/
-
-#lars {
-	background-image: Url("./Images/Guitar hands.jpg");
-	background-size: cover;
-	width: 1000px;
-	height: 475px;
-}
-
-#tony {
-	width: 1000px;
-	height: 500px;
-}
-
-/* -----------------------Block dividers */
-
-.blockquote p {
-	
-	font-size: 25px;
-	color: #0892d0;
-	/*blue*/
-}
-
-.block text-uppercase {
-	font-size: 15px;
-}
 
 /* ---------------------------Page Headers events */
 
@@ -236,24 +230,6 @@ video {
 	text-align: center;
 	font-size: 18px;
 	padding-left: 5px;
-}
-
-/*-----------------------Images for band members info*/
-
-
-.rounded-images {
-	vertical-align: middle;
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
-	margin:10px;
-	padding: 25px;
-}
-
-.blockquote {
-	margin: 0;
-	overflow:scroll;
-
 }
 
 /*---------------------------- Slideshow&images Events page */
@@ -419,6 +395,11 @@ So the idea is we're going to use a border to create a perfect circle around the
 /*-------------------------Media Queries---*/
 
 @media screen and (max-width:800px) {
+		.bglogo img {
+		width: 85%;
+		margin-left: 7.5%;
+		text-align: center;
+	}
 	.menubar {
 		color: #93b0c3;
 		/*Darkgrey*/
@@ -434,6 +415,27 @@ So the idea is we're going to use a border to create a perfect circle around the
 	}
 }
 
+/*-------------------------------HOME PAGE for mobile*/
+.container-wrapper-home {
+	text-align: center;
+	overflow: scroll;
+}
+h2{
+	color:blue;
+}
+.blockquote p {
+	font-size: 15px;
+}
+.block text-uppercase {
+	font-size: 15px;
+}
+/*Images for band members info*/
+.rounded-images {
+	width: 100px;
+	height: 100px;
+	margin-top:5px;
+}
+/*------------------EVENT PAGE for mobile*/
 .flex-container {
 	flex-direction: column;
 	flex-wrap:wrap;
@@ -448,6 +450,24 @@ So the idea is we're going to use a border to create a perfect circle around the
 	max-width: 100%;
 }
 
+footer {
+		color: #121212;
+		font-size: 18px;
+		margin: 0;
+	}
+
+	footer .subscribe i {
+		color: #fff;
+		text-align: center;
+		font-size: 1.2em;
+
+	}
+
+	.social-links li a i:hover {
+		background-color: black;
+
+	}
+
 @media screen and (min-width:800px) {
 	.bglogo img {
 		width: 85%;
@@ -455,13 +475,16 @@ So the idea is we're going to use a border to create a perfect circle around the
 		text-align: center;
 	}
 
-.flex-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap:wrap;
-	justify-content: center;
-	width: 100%;
-}
+	.flex-container>div>iframe {
+		width: 225px;
+		height: 225px;
+		font-size: 24px;
+	}
+	.flex-container p {
+		font-size: 1.2em;
+		text-align: center;
+	}
+
 	
 	.menubar span {
 		font-size: 1em;
@@ -472,9 +495,31 @@ So the idea is we're going to use a border to create a perfect circle around the
 	}
 	.menubutton {
 		background: #c48b1a;
-		/* Royal blue colour for menu buttons in mobile*/
+		/*Gold colour for menu buttons in laptop*/
 		height: 75px;
 	}
+	
+	/*-------------------------------HOME PAGE for laptop*/
+.container-wrapper-home {
+	text-align: center;
+	overflow: scroll;
+}
+h2{
+	color:blue;
+}
+.blockquote p {
+	font-size: 25px;
+}
+.block text-uppercase {
+	font-size: 25px;
+}
+/*Images for band members info*/
+.rounded-images {
+	width: 100px;
+	height: 100px;
+	margin-top:5px;
+}
+	
 
 	footer .subscribe i {
 		color: #c48b1a;
@@ -531,4 +576,4 @@ So the idea is we're going to use a border to create a perfect circle around the
 	}
 }
 
-/*19/08/18*/
+/*06/09/18*/
