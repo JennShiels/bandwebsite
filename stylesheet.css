@@ -33,7 +33,10 @@ set the general-sub to 'Exo' font imported earlier--*/
 .h5 general-sub {
 	font-size: 25px;
 }
-
+.h7
+{
+font-family: cursive;	
+}
 
 /*--- This width of 100% will apply to all screen widths on all 
 images but allows the it to only go as wide as the original image to keep quality.*/
