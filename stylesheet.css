@@ -34,6 +34,23 @@ set the general-sub to 'Exo' font imported earlier--*/
 	font-size: 15px;
 }
 
+h2 {
+	font-size: 40px;
+	text-align: center;
+	color: Red;
+	font-family: fantasy;
+}
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+	color: Red;
+	font-family: fantasy;
+}
+
+.inline-block{
+	display: inline-block;
+}
 
 /*--- This width of 100% will apply to all screen widths on all 
 images but allows the it to only go as wide as the original image to keep quality.*/
@@ -61,14 +78,14 @@ images but allows the it to only go as wide as the original image to keep qualit
 	text-align: center;
 	font-size-adjust: inherit;
 	font-family: fantasy;
-	margin-top: .5%;
+	margin-top: 5px;
 }
 
 .menubutton {
 	background: #c48b1a;
 	/* Golden colour for menu buttons before hover*/
-	height: 45px;
-	/* use em to make size in relation to font size*/
+	height: 55px;
+	/* use em to make size in relation to font size or % of the page size*/
 	width: 24%;
 	/* 5 buttons at 24% of width of screen with enough room for margin space*/
 	margin: 0 0.5%;
@@ -83,7 +100,7 @@ images but allows the it to only go as wide as the original image to keep qualit
 	padding-top: 5px;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 18px;
 	font-weight: 100;
 	letter-spacing: 2px;
 }
@@ -91,7 +108,7 @@ images but allows the it to only go as wide as the original image to keep qualit
 /* Target font awesome icons */
 
 .menubutton a {
-	font-size: 12px;
+	font-size: 18px;
 	width: 100%;
 	text-decoration: none;
 	color: #333333;
@@ -101,7 +118,7 @@ images but allows the it to only go as wide as the original image to keep qualit
 /* Target the icons themselves adjusting their position size etc
 display as block so that it occupies parent container*/
 
-.menuitem a i {
+.menubutton a i {
 	padding-top: 5px;
 	display: block;
 	color: #333333;
@@ -113,7 +130,7 @@ display as block so that it occupies parent container*/
 
 .hvr-sweep-to-bottom:before {
 	background: rgba(0, 0, 0, 0.25);
-	height: 75px;
+	height: 45px;
 }
 /*--------------------------------------HOME PAGE------------------*/
 /*-------------------------------container home page*/
@@ -128,9 +145,6 @@ display as block so that it occupies parent container*/
 	margin:0px;
 }
 
-h2{
-	color:red;
-}
 .blockquote p {
 	font-size: 25px;
 	font-style: italic;
@@ -188,12 +202,6 @@ h2{
 	justify-content: center;
 	margin-bottom: 150px;
 
-}
-
-h1 {
-	text-align: center;
-	color: Red;
-	font-family: fantasy;
 }
 
 .flex-container>div {
@@ -282,13 +290,6 @@ h1 {
 
 
 /*--------------------------Contact form------*/
-
-h3 {
-	font-size: 26px;
-	text-align: center;
-	color: Red;
-	font-family: fantasy;
-}
 
 input[type=text],
 select,
@@ -391,582 +392,4 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 #footer-details {
 	margin: 20px;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,800|Exo:100,300,400,500,700,800");
-
-/*---repeat the tiled image to cover the whole background of any screen---*/
-
-/*---apply this to override any other possible uneven margins and paddings*/
-
-body,
-html {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background: url("./Images/backgroundtile.jpg") repeat;
-}
-
-/*----set the text transform to be uppercase
-set the general-sub to 'Exo' font imported earlier--*/
-
-.uppercase {
-	text-transform: uppercase;
-}
-
-.page-header>text-uppercase {
-
-	text-transform: uppercase;
-	color: #c48b1a;
-	/*  Electric blue for band member section*/
-}
-
-.general-sub {
-	font-family: "Exo", "vintage";
-}
-
-.h5 general-sub {
-	font-size: 25px;
-}
-
-.inline-block {
-	display: inline-block;
-}
-
-/*--- This width of 100% will apply to all screen widths on all 
-images but allows the it to only go as wide as the original image to keep quality.*/
-
-/*--------------------------Background Cover Image*/
-
-.bglogo img {
-	/* Full height */
-	padding: 0;
-	max-width: 100%;
-	/* Center and scale the image nicely */
-	height: auto !important;
-	background-size: cover;
-	text-align: center;
-	position: relative;
-	background-repeat: no-repeat;
-
-}
-
-/*--------------------------Menu bar-------*/
-
-.menubar {
-	color: #966f33;
-	opacity: 2.5;
-	text-align: center;
-	font-size-adjust: inherit;
-	font-family: fantasy;
-	margin: 0px;
-
-}
-
-.menubutton {
-	background: #c48b1a;
-	/* Golden colour for menu buttons before hover*/
-	height: 45px;
-	width: 24%;
-	/* 5 buttons at 24% of width of screen with enough room for margin space*/
-	margin: 0 0.5%;
-	float: left;
-}
-
-/* Target font awesome icons */
-
-.menubutton a {
-	font-size: 12px;
-	width: 100%;
-	text-decoration: none;
-	color: #333333;
-	height: 120px;
-}
-
-/* Target the icons themselves adjusting their position size etc
-display as block so that it occupies parent container*/
-
-.menubutton a i {
-	padding-top: 5px;
-	display: block;
-	color: #333333;
-}
-
-/* Target span text ie. Home music event and contact*/
-
-.menubar span {
-	display: block;
-	width: 100%;
-	padding-top: 5px;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 100;
-	letter-spacing: 2px;
-}
-
-/*--------------------------Hvr.css* ----- */
-
-/*Targeting the hvr class- set the default colour using rgba which is colours & transparency*/
-
-.hvr-sweep-to-bottom:before {
-	background: rgba(0, 0, 0, 0.2);
-	height: 120px;
-}
-/*--------------------------------------HOME PAGE------------------*/
-/*-------------------------------container home page*/
-
-.container-wrapper-home {
-	height: 100%;
-	width: 100%;
-	position: relative;
-	color: #fff;
-	text-align: center;
-	overflow: scroll;
-	margin:0px;
-}
-
-h2{
-	color:red;
-}
-.blockquote p {
-	font-size: 25px;
-	font-style: italic;
-	color: #fff;
-	/*white text*/
-}
-
-.block text-uppercase {
-	font-size: 15px;
-}
-
-/*Images for band members info*/
-
-.rounded-images {
-	text-align: left;
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-}
-
-.blockquote {
-	margin: 0;
-
-}
-/*---------------------------MUSIC PAGE----flexboxes for videos and images*/
-
-.flex-container {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	margin-bottom: 150px;
-
-}
-
-h2 {
-	text-align: center;
-	color: Red;
-	font-family: fantasy;
-}
-
-.flex-container>div {
-	background-color: #cf1407;
-	margin: 10px;
-	padding: 5px;
-	font-size: 16px;
-}
-
-.flex-container p {
-	font-family: fantasy;
-	font-weight: bold;
-	color: #121212;
-	font-size: 18px;
-}
-
-/*------------------------ Containers */
-
-.content-container {
-	margin-top: 0px;
-	padding: 15%;
-}
-.content-container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.container-wrapper {
-	height: 100%;
-	width: 95%;
-	margin-left: 15px;
-	margin-right: 15px;
-	position: relative;
-	margin-top: 20px;
-	margin-bottom: 25px;
-	color: blue;
-}
-
-/*----------------------------------container events pages*/
-
-.container-wrapper-events {
-	text-align: center;
-	height: 35%;
-	position: relative;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-/*.content-container-events>div {
-	background-color: #cf1407;
-	margin: 10px;
-	padding: 5px;
-	font-size: 16px;
-}*/
-
-.content-container-events {
-	text-align: center;
-	margin-top: 5%;
-	padding-top: 25px;
-	padding-bottom: 75px;
-}
-
-/*-------------select images to change photo gallery on events page*/
-
-.flex-container-events {
-	height: 250px;
-	width: 100%;
-	flex-direction: column;
-	text-align: center;
-}
-
-.column {
-	background-color: #cf1407;
-	float: left;
-	width: 20%;
-	margin-left: 5%;
-}
-
-/* Add a transparency effect for thumnbail images */
-
-.democursor {
-	opacity: 0.8;
-	width: 100%;
-	height: 100%;
-}
-
-.active,
-.democursor:hover {
-	opacity: 1;
-}
-
-/*-------footer container*/
-
-.container-fluid {
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-/* -----------------------Block dividers */
-
-.blockquote p {
-	font-size: 25px;
-	color: #c48b1a;
-	/*gold*/
-}
-
-.block text-uppercase {
-	font-size: 15px;
-}
-
-/* ---------------------------Page Headers events */
-
-.page-header {
-	font-size: 18px;
-	font-family: Jazz LET, fantasy;
-	margin-top: 5%;
-	margin-bottom: 0;
-	border-bottom: 0;
-	text-align: center;
-	color: red;
-}
-
-/*-----------------------Images for band members info*/
-
-.rounded-images {
-	vertical-align: middle;
-	width: 125px;
-	height: 125px;
-	border-radius: 45%;
-	text-align: left;
-	border-color: white;
-}
-
-.blockquote {
-	margin: 0;
-}
-
-/*------------------------------Images& text Events page */
-
-.media p {
-	color: #FFFCCF;
-}
-
-.media {
-	margin-left: 10%;
-	text-align: center;
-	margin-bottom: 150px;
-	width: 90%;
-	height: 275px;
-	overflow: scroll;
-}
-
-.RBimages {
-	vertical-align: middle;
-	max-width: 100%;
-	border-radius: 25%;
-	margin-left: 25px;
-}
-
-.slide-images {
-	width: 650px;
-	height: 550px;
-	margin: 25%;
-	text-align: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-
-
-.display-bottommiddle {
-	margin-top: 10px;
-	margin-bottom: 0;
-	border-bottom: 0;
-	text-align: center;
-	font-size: 1.5em;
-}
-
-.block-location {
-	font-family: fantasy;
-	font-size: 25px;
-	text-align: center;
-}
-
-.general-sub p {
-	font-size: 38px;
-}
-
-
-/*--------------------------Contact form------*/
-
-h3 {
-	font-size: 26px;
-	text-align: center;
-	color: Red;
-	font-family: fantasy;
-}
-
-input[type=text],
-select,
-textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-}
-
-input[type=submit] {
-	background-color: #4CAF50;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
-
-input[type=submit]:hover {
-	background-color: #45a049;
-}
-
-.container {
-	border-radius: 5px;
-	background-color: #f2f2f2;
-	padding: 20px;
-	margin-bottom: 150px;
-}
-
-/*-------------------------FOOTER-*/
-
-/*--style the font for the social links*/
-
-.list-inline li {
-	display: inline-block;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-/*minimum height of 120px.
-Now it can grow beyond that if the text if for some reason the About Me text extends or pushes below or 
-our pushes beyond the 120px. But if not it will default to 120px again providing that kind of visual symmetry, 
-visual balance between the footer and say, the menu items above.*/
-
-footer {
-	position: static;
-    max-width: 100%;
-    background-color:#cf1407;
-	color: #fafafa;
-max-height: 75px;
-	padding: 0;
-}
-
-
-/*adding some styles to our icons
-and our text and the display itself.
- footer .subscribe i, will access the font awesome icon -
-It's a bit small.*/
-
-footer .subscribe i {
-	color: #cf1407;
-	text-align: center;
-	font-size: 12px;
-	padding-left: 5px;
-}
-
-/*Create our custom class called social-links
-So the idea is we're going to use a border to create a perfect circle around the edges*/
-
-.social-links {
-	padding-bottom: 15px;
-}
-
-.social-links li a i {
-	width: 35px;
-	height: 35px;
-	padding: 18px;
-	border-radius: 50%;
-	font-size: 18px;
-	line-height: 12px;
-	text-align: center;
-	color: #fafafa;
-	background: #8f8f8f;
-	transition: all 0.35s ease-in-out;
-	-moz-transition: all 0.35s ease-in-out;
-	-webkit-transition: all 0.35s ease-in-out;
-	-o-transition: all 0.35s ease-in-out;
-}
-
-.social-links li a i:hover {
-	background-color: #cf1407;
-
-}
-
-#footer {
-	margin: 20px;
-}
-
-/*-------------------------Media Queries---*/
-
-@media screen and (min-width:479px) {
-	.bglogo img {
-		width: 85%;
-		margin-left: 7.5%;
-		text-align: center;
-	}
-	.blockquote p {
-		font-size: 30px;
-		color: #FEE830;
-		/*gold*/
-	}
-	.menubar span {
-		font-size: 1em;
-	}
-	.menubutton a {
-		font-size: 1.5em;
-		height: 75px;
-	}
-	.menubutton {
-		background: #c48b1a;
-		/* Royal blue colour for menu buttons in mobile*/
-		height: 75px;
-	}
-	.flex-container>div>iframe {
-		width: 225px;
-		height: 225px;
-		font-size: 24px;
-	}
-	.flex-container p {
-		font-size: 1.2em;
-		text-align: center;
-	}
-
-	footer .subscribe i {
-		color: #c48b1a;
-		/*gold*/
-	}
-	.social-links li a i:hover {
-		background-color: #c48b1a;
-
-	}
-}
-
-@media screen and (max-width:800px) {
-	.menubar {
-		color: #93b0c3;
-		/*Darkgrey*/
-	}
-	.menubutton {
-		background: #cf1407;
-		/* Fire red colour for menu buttons in mobile*/
-	}
-	.menubar span {
-		font-size: 14px;
-		font-weight: 100;
-		letter-spacing: 1.5px;
-	}
-}
-
-@media screen and (min-width:1200px) {
-
-	.menubar span {
-		font-size: 1em;
-		letter-spacing: 1.5px;
-	}
-	.menubutton a {
-		font-size: 1.5em;
-		height: 75px;
-	}
-	.menubutton {
-		background: #5878ea;
-		/* Royal blue colour for menu buttons for laptop*/
-		height: 75px;
-	}
-
-	.flex-container>div>iframe {
-		width: 225px;
-		height: 225px;
-		font-size: 24px;
-	}
-	.flex-container p {
-		font-size: 1.2em;
-		text-align: center;
-	}
-
-	footer .subscribe i {
-		color: #5878ea;
-		text-align: center;
-		font-size: 18px;
-		padding-left: 5px;
-
-	}
-
-	.social-links li a i:hover {
-		background-color: #5878ea;
-
-	}
 }
