@@ -59,7 +59,7 @@ images but allows the it to only go as wide as the original image to keep qualit
 
 .bglogo img {
 	/* Full height */
-	padding-top: 10px;
+	padding: 0;
 	max-width: 100%;
 	/* Center and scale the image nicely */
 	height: auto !important;
@@ -69,6 +69,7 @@ images but allows the it to only go as wide as the original image to keep qualit
 	background-repeat: no-repeat;
 
 }
+
 
 /*--------------------------Menu bar-------*/
 
@@ -171,8 +172,8 @@ display as block so that it occupies parent container*/
 }
 
 
-/*-----------------------EVENTS PAGE------------------------*/
-/*------------------------------------container events pages*/
+/*-----------------------EVENTS PAGE-----------12/02/2019-------------*/
+/*------------------------------------container for band info in events page*/
 
 .container-wrapper-events {
 	height: 50%;
@@ -180,17 +181,13 @@ display as block so that it occupies parent container*/
 	/*margin-top: 20px;*/
 	margin-bottom: 25px;
 }
-
+/*---------------------------- container for slide show in events page and videos in music page*/
 .content-container {
 	height: 100%;
 	text-align: center;
 	margin-top: 5%;
 	padding-top: 25px;
 	padding-bottom: 75px;
-}
-
-.container-eventspage{
-	/*19/08*/
 }
 
 /*---------------------------MUSIC PAGE----flexboxes for videos and images*/
@@ -218,7 +215,8 @@ display as block so that it occupies parent container*/
 	font-size: 18px;
 }
 
-/* ---------------------------Page Headers events */
+/* ---------------------------Page Headers events
+-----------------------------------------------------10/02/19*/
 
 .page-header {
 	font-size: 18px;
@@ -256,19 +254,6 @@ display as block so that it occupies parent container*/
 
 }
 
-.slideshow-container {
-	width: 100%;
-	position: relative;
-	margin: auto;
-}
-
-.display-bottommiddle {
-	margin-top: 10px;
-	margin-bottom: 0;
-	border-bottom: 0;
-	text-align: center;
-	font-size: 1.5em;
-}
 
 
 .block-location {
@@ -280,13 +265,6 @@ display as block so that it occupies parent container*/
 .general-sub p {
 	font-size: 38px;
 }
-
-.RBimages{
-	width:500px;
-	height:500px;
-	margin-left:25px;
-	float: left;
-	}
 
 
 /*--------------------------Contact form------*/
@@ -325,6 +303,13 @@ input[type=submit]:hover {
 }
 
 /*-------------------------FOOTER-*/
+
+/*------------------------------footer container  10/02/19 */
+.container-fluid {
+		margin-right: auto;
+		margin-left: auto;
+		padding-left: 15px;
+		padding-right: 15px;}
 
 /*--style the font for the social links*/
 
@@ -392,4 +377,106 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 #footer-details {
 	margin: 20px;
+}
+
+
+/*-------------------------Media Queries---*/
+
+@media screen and (min-width:479px) {
+	.bglogo img {
+		width: 85%;
+		margin-left: 7.5%;
+		text-align: center;
+	}
+	.blockquote p {
+		font-size: 30px;
+		color: #FEE830;
+		/*gold*/
+	}
+	.menubar span {
+		font-size: 1em;
+	}
+	.menubutton a {
+		font-size: 1.5em;
+		height: 75px;
+	}
+	.menubutton {
+		background: #c48b1a;
+		/* Royal blue colour for menu buttons in mobile*/
+		height: 75px;
+	}
+	.flex-container>div>iframe {
+		width: 225px;
+		height: 225px;
+		font-size: 24px;
+	}
+	.flex-container p {
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+	footer .subscribe i {
+		color: #c48b1a;
+		/*gold*/
+	}
+	.social-links li a i:hover {
+		background-color: #c48b1a;
+
+	}
+}
+
+@media screen and (max-width:800px) {
+	.menubar {
+		color: #93b0c3;
+		/*Darkgrey*/
+	}
+	.menubutton {
+		background: #cf1407;
+		/* Fire red colour for menu buttons in mobile*/
+	}
+	.menubar span {
+		font-size: 14px;
+		font-weight: 100;
+		letter-spacing: 1.5px;
+	}
+}
+
+@media screen and (min-width:1200px) {
+
+	.menubar span {
+		font-size: 1em;
+		letter-spacing: 1.5px;
+	}
+	.menubutton a {
+		font-size: 1.5em;
+		height: 75px;
+	}
+	.menubutton {
+		background: #5878ea;
+		/* Royal blue colour for menu buttons for laptop*/
+		height: 75px;
+	}
+
+	.flex-container>div>iframe {
+		width: 225px;
+		height: 225px;
+		font-size: 24px;
+	}
+	.flex-container p {
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+	footer .subscribe i {
+		color: #5878ea;
+		text-align: center;
+		font-size: 18px;
+		padding-left: 5px;
+
+	}
+
+	.social-links li a i:hover {
+		background-color: #5878ea;
+
+	}
 }
