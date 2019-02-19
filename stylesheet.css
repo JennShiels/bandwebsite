@@ -133,24 +133,49 @@ display as block so that it occupies parent container*/
 	background: rgba(0, 0, 0, 0.25);
 	height: 45px;
 }
-/*--------------------------------------HOME PAGE------------------*/
-/*-------------------------------container home page*/
 
-.container-wrapper-home {
-	height: 100%;
-	width: 100%;
-	position: relative;
-	color: #fff;
+
+/*---------------------------- Slideshow&images Events page */
+
+.carousel-inner {
+	width: 650px;
+	height:550;
+	padding-top: 15px;
+	margin-left: 25%;
+	margin-bottom:100px;
 	text-align: center;
-	overflow: scroll;
-	margin:0px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+
+.general-sub p {
+	font-size: 38px;
+}
+
+.container-wrapper-events {
+	height: 50%;
+	position: relative;
+	/*margin-top: 20px;*/
+	margin-bottom: 25px;
+}
+
+.members{
+	height: 100%;
+	text-align: center;
+	margin-top: 5%;
+	padding-top: 25px;
+	padding-bottom: 75px;
+	
 }
 
 .blockquote p {
 	font-size: 25px;
 	font-style: italic;
-	color: #fff;
-	/*white text*/
+	color: #C0C0C0;
+	/*silver text*/
 }
 
 .block text-uppercase {
@@ -171,16 +196,6 @@ display as block so that it occupies parent container*/
 
 }
 
-
-/*-----------------------EVENTS PAGE-----------12/02/2019-------------*/
-/*------------------------------------container for band info in events page*/
-
-.container-wrapper-events {
-	height: 50%;
-	position: relative;
-	/*margin-top: 20px;*/
-	margin-bottom: 25px;
-}
 /*---------------------------- container for slide show in events page and videos in music page*/
 .content-container {
 	height: 100%;
@@ -191,6 +206,16 @@ display as block so that it occupies parent container*/
 }
 
 /*---------------------------MUSIC PAGE----flexboxes for videos and images*/
+
+.container-wrapper-home {
+	height: 90%;
+	width: 100%;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	overflow: scroll;
+	margin:0px;
+}
 
 .flex-container {
 	display: flex;
@@ -215,55 +240,13 @@ display as block so that it occupies parent container*/
 	font-size: 18px;
 }
 
-/* ---------------------------Page Headers events
------------------------------------------------------10/02/19*/
+/* ---------------------------Page Headers events---------------*/
 
 .page-header {
 	font-size: 18px;
 	margin: 0;
 	text-align: center;
 	color: red;
-}
-
-.subtitle i {
-	color: #fff;
-	text-align: center;
-	font-size: 18px;
-	padding-left: 5px;
-}
-
-.display {
-	color: blue;
-	text-align: center;
-	font-size: 18px;
-	padding-left: 5px;
-}
-
-/*---------------------------- Slideshow&images Events page */
-
-.slide-images {
-	width: 650px;
-	height:550;
-	padding-top: 15px;
-	margin-left: 25%;
-	margin-bottom:100px;
-	text-align: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-
-}
-
-
-
-.block-location {
-	font-family: fantasy;
-	font-size: 25px;
-	text-align: center;
-}
-
-.general-sub p {
-	font-size: 38px;
 }
 
 
@@ -320,8 +303,8 @@ input[type=submit]:hover {
 }
 
 /*minimum height of 120px.
-Now it can grow beyond that if the text if for some reason the About Me text extends or pushes below or 
-our pushes beyond the 120px. But if not it will default to 120px again providing that kind of visual symmetry, 
+Now it can grow beyond that if for some reason the text extends or pushes below or 
+our container pushes beyond the 120px. But if not it will default to 120px again providing that kind of visual symmetry, 
 visual balance between the footer and say, the menu items above.*/
 
 footer {
@@ -331,7 +314,7 @@ footer {
     left: 0; 
     background-color:#cf1407;
 	color: #fafafa;
-	min-height:120px;
+	max-height: 120px;
 	margin: 0;
 }
 
@@ -355,8 +338,8 @@ So the idea is we're going to use a border to create a perfect circle around the
 }
 
 .social-links li a i {
-	width: 55px;
-	height: 55px;
+	width: 35px;
+	height: 35px;
 	padding: 12px;
 	border-radius: 50%;
 	font-size: 18px;
