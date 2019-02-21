@@ -10,6 +10,7 @@ html {
 	margin: 0;
 	padding: 0;
 	background: url("./Images/backgroundtile.jpg") repeat;
+	color:#ffffff;
 }
 
 /*----set the text transform to be uppercase
@@ -35,6 +36,8 @@ set the general-sub to 'Exo' font imported earlier--*/
 }
 
 h2 {
+	margin-top:10px;
+	padding-top: 10px;
 	font-size: 40px;
 	text-align: center;
 	color: Red;
@@ -155,27 +158,31 @@ display as block so that it occupies parent container*/
 	font-size: 38px;
 }
 
+/*Images for band members events*/
+
+.media-center {
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
 .container-wrapper-events {
 	height: 50%;
 	position: relative;
-	/*margin-top: 20px;*/
-	margin-bottom: 25px;
-}
+	}
 
-.members{
-	height: 100%;
-	text-align: center;
-	margin-top: 5%;
-	padding-top: 25px;
-	padding-bottom: 75px;
-	
+.blockquote {
+	margin: 0;
 }
 
 .blockquote p {
+
+	margin:0px;
 	font-size: 25px;
 	font-style: italic;
-	color: #C0C0C0;
-	/*silver text*/
+	text-align: justify;
+
 }
 
 .block text-uppercase {
@@ -189,11 +196,6 @@ display as block so that it occupies parent container*/
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-}
-
-.blockquote {
-	margin: 0;
-
 }
 
 /*---------------------------- container for slide show in events page and videos in music page*/
@@ -267,7 +269,7 @@ textarea {
 
 input[type=submit] {
 	background-color: #4CAF50;
-	color: white;
+	color: black;
 	padding: 12px 20px;
 	border: none;
 	border-radius: 4px;
@@ -279,6 +281,7 @@ input[type=submit]:hover {
 }
 
 .container {
+	color:black;
 	border-radius: 5px;
 	background-color: #f2f2f2;
 	padding: 20px;
