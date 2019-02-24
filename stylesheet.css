@@ -134,7 +134,7 @@ display as block so that it occupies parent container*/
 
 .hvr-sweep-to-bottom:before {
 	background: rgba(0, 0, 0, 0.25);
-	height: 45px;
+	height: 75px;
 }
 
 
@@ -368,7 +368,7 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 /*-------------------------Media Queries---*/
 
-@media screen and (min-width:479px) {
+@media screen and (max-width:600px) {
 	.bglogo img {
 		width: 85%;
 		margin-left: 7.5%;
@@ -400,6 +400,7 @@ So the idea is we're going to use a border to create a perfect circle around the
 		font-size: 1.2em;
 		text-align: center;
 	}
+
 
 	footer .subscribe i {
 		color: #c48b1a;
