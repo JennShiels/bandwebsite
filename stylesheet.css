@@ -63,6 +63,7 @@ images but allows the it to only go as wide as the original image to keep qualit
 .bglogo img {
 	/* Full height */
 	padding: 0;
+	margin-top:12px;
 	max-width: 100%;
 	/* Center and scale the image nicely */
 	height: auto !important;
@@ -368,7 +369,18 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 /*-------------------------Media Queries---*/
 
-@media screen and (max-width:600px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.bglogo img {
+		width: 85%;
+		margin-left: 7.5%;
+		text-align: center;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media screen and (min-width:600px) {
 	.bglogo img {
 		width: 85%;
 		margin-left: 7.5%;
@@ -413,6 +425,12 @@ So the idea is we're going to use a border to create a perfect circle around the
 }
 
 @media screen and (max-width:800px) {
+	.bglogo img {
+		width: 85%;
+		margin-left: 7.5%;
+		text-align: center;
+	}
+	
 	.menubar {
 		color: #93b0c3;
 		/*Darkgrey*/
@@ -429,6 +447,11 @@ So the idea is we're going to use a border to create a perfect circle around the
 }
 
 @media screen and (min-width:1200px) {
+	.bglogo img {
+		width: 85%;
+		margin-left: 7.5%;
+		text-align: center;
+	}
 
 	.menubar span {
 		font-size: 1em;
