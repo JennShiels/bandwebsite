@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,800|Exo:100,300,400,500,700,800");
 
-/*---repeat the tiled image to cover the whole background of any screen---*/
+/*---repeat the tiled image to cover the whole background of any screen
 
-/*---apply this to override any other possible uneven margins and paddings*/
+apply this to override any other possible uneven margins and paddings*/
 
 body,
 html {

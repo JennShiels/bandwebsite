@@ -38,27 +38,26 @@ The Contacts page has a form where the user enters their information and can ent
 
 ### How does it work
  
-This website uses **HTML5** , **CSS** and **JScript**. The site is styled with **Bootstrap**. The quiz has been created using **Javascript** and modal for enlarging images is displayed using some **JQuery** code. **Bower** has been used to manage package dependencies for deployment of site on github pages. The site can be viewed [HERE](https://futoisaru.github.io/hippo/)
+This website uses **HTML5** , **CSS** and **JScript**. The site is styled with **Bootstrap**. 
 
 ## Features
  
 ### Existing Features
-- Eye catching front page
-  - Sliding picture box
+- Band logo on each page fro continuity
+  - Sliding picture box on events page
 - Information page.
-  - Sidebar to navigate to different parts of the information
-- Media page with plenty of pictures and a video
-- Links page to other sites with information about Hippopotami
-- Quiz page for viewers to test their knowledge
-    - Form for viewers to input their answers or check the correct box
-    - Submit button so viewers can see how they scored on the quiz
+  - Topbar to navigate to different pages in the website
+- Music page with videos
+- Links in footer to other media social sites with information about The Dropouts
+- Subcription link to their Youtube account
+- Facebook link
 
 ### Features Left to Implement
-- None
+- Pinterest, Twitter accounts to be set up
 
 ## Tech Used
 
-### Some the tech used includes:
+### Some the tech used includes: 
 - **HTML**, **CSS** and **Javascript**
   - Base languages used to create website
 - [AngularJS](https://angularjs.org/)
@@ -67,13 +66,9 @@ This website uses **HTML5** , **CSS** and **JScript**. The site is styled with *
     - We use **Bootstrap** to give our project a simple, responsive layout
 - [JQuery](https://jquery.com)
     - Use **JQuery** for boostrap and displaying modal
-- [npm](https://www.npmjs.com/)
-    - We use **npm** to install **http-server** in order to view the site
-- [Bower](https://bower.io)
-    - Using **Bower** to manage package dependencies
 
 ## Testing
-- Prototype code was written and tested using jasmine
+- Prototype code was written and tested using Cloud9
 - All code used on the site has been tested to ensure everything is working as expected
 - Site viewed and tested in the following browsers:
   - Google Chrome
@@ -81,24 +76,13 @@ This website uses **HTML5** , **CSS** and **JScript**. The site is styled with *
   - Microsoft Edge
   - Mozilla Firefox
 
-## Contributing
- 
-### Getting the code up and running
-1. Firstly you will need to clone this repository by running the ```git clone <project's Github URL>``` command
-2. After you've that you'll need to make sure that you have **npm** installed
-  1. You can get **npm** by installing Node from [here](https://nodejs.org/en/)
-4. After those dependencies have been installed you'll need to make sure that you have **http-server** installed. You can install this by running the following: ```npm install -g http-server # this also may require sudo on Mac/Linux```
-5. Once **http-server** is installed run ```http-server -c-1```
-6. The project will now run on [localhost](http://127.0.0.1:8080)
-7. Make changes to the code and if you think it belongs in here then just submit a pull request
-
 ## Credits
 
 ### Media
-- The photos used in this site were obtained from [Pixabay](https://pixabay.com/)
-- The video used on this site belongs to Nat Geo Wild channel on [youtube](https://www.youtube.com/watch?v=WfrG95GyU9U)
+- The photos used in this site were obtained from the band's website
+- The video used on this site belongs to the band's youtube account
+
 
 ### Information
-- The information used to create this site was from a number of sources
-    - Wikipedia webpage on [Hippos](https://en.wikipedia.org/wiki/Hippopotamus) and [Pygmy Hippos](https://en.wikipedia.org/wiki/Pygmy_hippopotamus)
-    - The African Wildlife Foundation [website](http://www.awf.org/wildlife-conservation/hippopotamus)
+- The information used to create this site was from the band and their facebook page 
+   
