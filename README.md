@@ -43,11 +43,11 @@ This website uses **HTML5** , **CSS** and **JScript**. The site is styled with *
 ## Features
  
 ### Existing Features
-- Band logo on each page fro continuity
+- Band logo on each page for continuity
   - Sliding picture box on events page
 - Information page.
   - Topbar to navigate to different pages in the website
-- Music page with videos
+- Music page with videos from YouTube
 - Links in footer to other media social sites with information about The Dropouts
 - Subcription link to their Youtube account
 - Facebook link
@@ -79,10 +79,17 @@ This website uses **HTML5** , **CSS** and **JScript**. The site is styled with *
 ## Credits
 
 ### Media
-- The photos used in this site were obtained from the band's website
-- The video used on this site belongs to the band's youtube account
+- The photos used in this site were obtained from the band's facebook account
+- The videos used on this site belongs to the band's youtube account
 
 
 ### Information
-- The information used to create this site was from the band and their facebook page 
+- The information used to create this site was from the band members and their facebook page
+
+### Source
+- https://www.w3schools.com
+
+
+
+
    

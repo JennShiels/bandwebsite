@@ -208,6 +208,20 @@ display as block so that it occupies parent container*/
 	padding-bottom: 75px;
 }
 
+div.carousel-inner{
+	text-align: center;
+	}
+
+div.item{
+	max-width: 100%;
+	text-align: center;
+	padding: 5%;
+}
+
+.carousel-control{
+	margin: 10px;
+}
+
 /*---------------------------MUSIC PAGE----flexboxes for videos and images*/
 
 .container-wrapper-home {
@@ -490,3 +504,4 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 	}
 }
+
