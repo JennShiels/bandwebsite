@@ -60,8 +60,6 @@ This website uses **HTML5** , **CSS** and **JScript**. The site is styled with *
 ### Some the tech used includes: 
 - **HTML**, **CSS** and **Javascript**
   - Base languages used to create website
-- [AngularJS](https://angularjs.org/)
-    - We use **AngularJS** to handle page routing and to build custom directives
 - [Bootstrap](http://getbootstrap.com/)
     - We use **Bootstrap** to give our project a simple, responsive layout
 - [JQuery](https://jquery.com)
