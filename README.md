@@ -6,9 +6,6 @@ This is my first website to present to potential clients looking for a band. The
 that cover a range of information involving the band, including a bit about the members, what kind of music they play where they have played, 
 and a contact form to submit any queries to them.
 
-# User Centric Frontend Development Project
- Band Website - The Dropouts Galway
-
 ###  The following guidelines were used when developing this project:
 
  #1   Create a website of around 4-5 pages, or (if using a single scrolling page) these should be separate page areas.
