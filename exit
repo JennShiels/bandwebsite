@@ -1,0 +1,467 @@
+[33mcommit a3154efbcb1b2183ab234732e5e4d20a72a6d93e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Fri Mar 29 20:35:02 2019 +0000
+
+    final commit
+
+[33mcommit 81f826344b036adc4f2022d2e85a551b9b666be1[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Fri Mar 29 20:29:35 2019 +0000
+
+    sort file path to stylesheet background
+
+[33mcommit e994218ecb6ee7cdfcaf429da228bfc67e8b109e[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Fri Mar 29 20:21:42 2019 +0000
+
+    final commit
+
+[33mcommit 7a0460887f40f4474173c4e45795f8dc9ec64ea3[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Fri Mar 29 20:13:29 2019 +0000
+
+    sort filepath
+
+[33mcommit 01e8ef8ff1d99aa698b84f414f92d4c53ec129d8[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Mar 26 21:59:03 2019 +0000
+
+    checking filepath for stylesheet is working
+
+[33mcommit ab42720ae6af1972a5f6307c6ef9c0db95fc0686[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Mar 26 21:55:54 2019 +0000
+
+    checking file path working for stylesheet
+
+[33mcommit 1b03999d2a8044e139e186d9a1ce02ca07985fda[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Mar 26 21:48:15 2019 +0000
+
+    checking file path working
+
+[33mcommit 122d9de55b8f4386f20d0441f3ed21d7323d038c[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Mar 26 21:45:51 2019 +0000
+
+    checking relative file path working
+
+[33mcommit f789cf8a88e523de8d11cdab0300f50ca2eabf08[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Mar 26 21:41:41 2019 +0000
+
+    correct file path for background
+
+[33mcommit 4c7afd5df729437f113eff3f365a197f26e74f4b[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Mar 26 21:30:28 2019 +0000
+
+    correct file directories in order to deploy github pages
+
+[33mcommit a5fa63413fcfefa066f56e5de267ff3b5885a9b1[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Mar 26 16:15:50 2019 +0000
+
+    change position of some folders into other directories for deployment in github pages
+
+[33mcommit 4554b0ecf821ed7308b84ca623f2c10b2691f6ce[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Mon Mar 25 21:32:20 2019 +0000
+
+    fixing file path for stylesheet
+
+[33mcommit b2027d2fffcd6ebe9bb4770c9acdabfd66468356[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sat Mar 23 23:54:37 2019 +0000
+
+    final commit with README.md
+
+[33mcommit 78baece8e37df3397b70f6608a57cc47cc82115c[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Wed Mar 13 21:53:07 2019 +0000
+
+    Add the original wireframes
+
+[33mcommit 73b31e5b4c327fcb8e6d4b68e266d11e48d5026b[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sat Mar 9 22:59:53 2019 +0000
+
+    final commit
+
+[33mcommit 2f75825fc525b8c4faccd1179207beca1585a171[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sun Mar 3 21:59:09 2019 +0000
+
+    readme.md
+
+[33mcommit 362439f8c73bed8560765b44e80704014c18698d[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sat Mar 2 22:53:11 2019 +0000
+
+    edit readme.md
+
+[33mcommit 3c772a469192f3105e69895a6996a1151c2fcbaa[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Fri Mar 1 21:41:14 2019 +0000
+
+    final website version
+
+[33mcommit e5a13ce9591884fc2e13e93444573e7e1bf0a150[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sun Feb 24 21:18:00 2019 +0000
+
+    last touches
+
+[33mcommit 3f63ba350b2dfa0c36c1b7ef80d7da247dfa6063[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Thu Feb 21 22:47:05 2019 +0000
+
+    make text white in events page, make form clearer on contacts page,move footer in events page and get rid of margin on left. tidy up CSS
+
+[33mcommit f731d78eb8fec641df7fa4993dee487074f873ae[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Feb 19 21:39:28 2019 +0000
+
+    index and music pages completed
+
+[33mcommit 2117c19cdd58fa72cf46202a2a027075f9b52c4e[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Wed Feb 13 21:17:42 2019 +0000
+
+    fix media queries
+
+[33mcommit 00a4f5614206c95fb83afae3cf230bfa14f1f22e[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sat Feb 9 23:07:47 2019 +0000
+
+    fix nav bar appearance
+
+[33mcommit 8cb875f0676c9bbda2e7ffae167c4314ee359506[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Fri Feb 8 22:14:59 2019 +0000
+
+    fix slideshow events page
+
+[33mcommit 1d197c8a9c6c75738e272668dbc076253ee3c134[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Mon Feb 4 20:14:20 2019 +0000
+
+    adjust footer to match each page
+
+[33mcommit 6cafc09be0fca6a09e9b56437a57ce1c9e7875ee[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Wed Jan 23 20:45:07 2019 +0000
+
+    tidy up containers and visual aspect of index and music pages
+
+[33mcommit 232567d05903f3238d8c2e0abae9e05be3cfdeb4[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Mon Jan 21 21:13:22 2019 +0000
+
+    edit text
+
+[33mcommit 88565a99545c587bf52bf81906feb3e699e8b2a1[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Thu Sep 6 20:59:24 2018 +0000
+
+    fix columns for mobile view in home page and media queries
+
+[33mcommit 5cc7743bab4625dfe636f19a7f38eabc8c08e447[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Sep 4 20:56:48 2018 +0000
+
+    close gap between footer and container-wrapper
+
+[33mcommit 0a815ebd4bdd6bc3e3dbe6c0a1ae0d51825b2fbd[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sat Aug 25 21:39:51 2018 +0000
+
+    add video player to music page
+
+[33mcommit 02ac5d165daa8dc1ee6543d0bbfe84098f1522f4[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sun Aug 19 21:10:52 2018 +0000
+
+    adjust the position of containers and images on all pages
+
+[33mcommit e1d93cae7b2a8bc402ebb5624c791729bb6a24b3[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Thu Aug 9 21:43:31 2018 +0000
+
+    fix footer hight for each page and correct form on contact page
+
+[33mcommit 7fbc80608c54d72aa3a0b0d0756e1c59c39805b2[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Aug 7 20:34:10 2018 +0000
+
+    save all
+
+[33mcommit 05de0c5d04b65e3739e210de4484dcf1b703b5d2[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Aug 7 19:58:41 2018 +0000
+
+    correct background and overflow to scroll
+
+[33mcommit 7b9847c772dba89f7d6df5f3cd7ec276829b16d3[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Wed Aug 1 20:47:11 2018 +0000
+
+    re add target=_blank to all page links
+
+[33mcommit 4c71bc27b0e836f23e57f6b8439207e4025e1e40[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Jul 31 20:54:56 2018 +0000
+
+    modified flex boxes
+
+[33mcommit 3ed77dc7ca44073b49c246a6bed8367f374fc018[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Jul 31 20:32:17 2018 +0000
+
+    modified website
+
+[33mcommit 7f14e0350f69946bcabc4381ab1d6b92c72e3839[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sun Jun 3 21:29:15 2018 +0000
+
+    fix flex box in events, completed other pages
+
+[33mcommit 5836516659d111271435bb7a605083a0f630ee72[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sun Jun 3 12:57:53 2018 +0000
+
+    commit all pages
+
+[33mcommit 31204d8c055ac8fd3b1321ec19319473ade23adb[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sat Jun 2 23:38:13 2018 +0000
+
+    tidy up music page with videos
+
+[33mcommit 178dd390749eaa02c15e76b6a203f19ac350bcf7[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sat Jun 2 21:39:40 2018 +0000
+
+    lost flex box images.wont appear.
+
+[33mcommit edc41f7b690f8fa5be86af11bc8379d61304c4a1[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Thu May 31 20:46:08 2018 +0000
+
+    arrange layout grid
+
+[33mcommit a01270d338e821a265863f8504fe13596acf6190[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Wed May 30 21:40:35 2018 +0000
+
+    commit all changes
+
+[33mcommit a94f8dd4a2b4e2c50f63eb57130a87e11b98db22[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue May 29 22:21:07 2018 +0000
+
+    correct flexbox for slideshow.next apply media query for slideshow
+
+[33mcommit 1a6e4e68fd0a503f419417acafd3f7917bb71df4[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue May 29 20:28:10 2018 +0000
+
+    create scroll bar for text index.html
+
+[33mcommit 65e69ffdcc00c2024c4418a1ed9be05986e019df[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sun May 27 21:17:00 2018 +0000
+
+    fix images eventspage
+
+[33mcommit e15de72ed566e1762f6c7305aa0c2107616f87d7[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sun May 27 00:18:34 2018 +0000
+
+    fix divs
+
+[33mcommit 78ee96d0fac0a3204add24f712eb9e6c65f05ede[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Thu May 24 21:54:46 2018 +0000
+
+    improve the slideshow
+
+[33mcommit d6292de7caac528a615e2a8e1954759539c52a13[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Wed May 23 21:43:25 2018 +0000
+
+    fix slideshow
+
+[33mcommit 00a8e557417de1c2ebee9d3e100ca9f264e70773[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Wed May 23 20:08:55 2018 +0000
+
+    fix hover in index.html
+
+[33mcommit 1d9737fca7fc6aa5c2bca35ae9318bbeb66950d2[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue May 22 21:42:23 2018 +0000
+
+    fix up index and stylesheet
+
+[33mcommit 685e4a2f6431e753947b34246353d300d91ea126[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue May 15 17:11:24 2018 +0000
+
+    add new code for play list and player
+
+[33mcommit 6a802c3fe0ded7f8772be8f2eaef49a2445cf0f4[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Mon May 14 21:19:44 2018 +0000
+
+    music page add audio player with playlist
+
+[33mcommit 1987504980003dffc27b98abe21180b16b60da65[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sun May 13 22:11:30 2018 +0000
+
+    fix footer, rearrange text and images
+
+[33mcommit a1497c9183b7a7de69bf39c6316390b69b42d045[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sun May 13 20:37:12 2018 +0000
+
+    hover css not working-add extra text to members info
+
+[33mcommit 30fc5c34fee83aa76180b1c40de045392eccef87[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Fri May 11 21:52:44 2018 +0000
+
+    alter layout for events page
+
+[33mcommit b4342dda6f794e77cac6c802680c9f3fcca7b28c[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Thu May 10 22:45:45 2018 +0000
+
+    insert images to rotaion of images with Script for events page
+
+[33mcommit 872e2b99f3037e42c0f2387ad5c5f8d575d7189e[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Thu May 10 20:46:47 2018 +0000
+
+    adjust media queries and responsiveness for laptops
+
+[33mcommit 5d4f4b0559288269251eff5bb89417ec566775dd[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Wed May 9 23:15:43 2018 +0000
+
+    events page alterations
+
+[33mcommit c6c8eb9a6be213755bd835352e875a0171aaed4d[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Wed May 9 23:11:52 2018 +0000
+
+    rounded images added and unsuccessfull images selector for events page
+
+[33mcommit 474bb241b1076f08506aafedd8d06271503a7441[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Wed May 9 20:04:43 2018 +0000
+
+    create the rounded images for band section
+
+[33mcommit b77785589a4d3155a65071d11bde920cebb994c6[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue May 8 21:20:21 2018 +0000
+
+    reposition the container in events page for image selector
+
+[33mcommit 8063dabf5235fa196b939439ef220b74ff4c9318[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue May 8 20:33:42 2018 +0000
+
+    edit image selector on events page
+
+[33mcommit 8ed8944addd492c2c48fa40a8b3fcd93efd01f77[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sun Apr 29 22:01:34 2018 +0000
+
+    tidy up fonts in events page
+
+[33mcommit c347ff455247457228f360882fd0a8f3b8f628cb[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sat Apr 28 23:29:10 2018 +0000
+
+    Add events page with slideshow images
+
+[33mcommit 1466b3bbd7f99b36fceeff65126a806da5f87f80[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Fri Apr 27 23:58:10 2018 +0000
+
+    add audio player to music page
+
+[33mcommit 362c95c8b7ac0dc3177ac70e1894ceb02ff9bb51[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Wed Apr 25 22:26:27 2018 +0000
+
+    position container-wrapper to stay under main logo section
+
+[33mcommit 111a1efc63d3d0f70a070f8a23d01b80c1f8c519[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Apr 24 22:17:47 2018 +0000
+
+    adding images to landing page editing css
+
+[33mcommit ad6bf07058a94f72ee97621bbb1d855b39a86d62[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sun Apr 22 22:18:38 2018 +0000
+
+    added audio bar to music page and set up member info on home page
+
+[33mcommit 484846680e543b079725fdd2b74afd590c856730[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sun Apr 22 12:12:24 2018 +0000
+
+    removed corrupted file
+
+[33mcommit fc798f27ad514073d3912867abed26f0f184379e[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Wed Apr 18 23:15:58 2018 +0000
+
+    footer add subscribe Youtube link
+
+[33mcommit 38ef1a366f41013a536429127b070da81dc4bbed[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Apr 17 22:53:08 2018 +0000
+
+    add youtube videos to cover page
+
+[33mcommit b011e2569d585bf4ccde59f948585bc558e136e5[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Apr 17 21:10:04 2018 +0000
+
+    added adjustments for media queries
+
+[33mcommit f6c10e08448848cce6fe50833feca352505314be[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Mon Apr 16 19:45:09 2018 +0000
+
+    change the layout menuebar and background tile
+
+[33mcommit 27c4b357ed39096121db6dfbfccb262b4bced71f[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Apr 10 21:24:07 2018 +0000
+
+    create minilogo link to subscribe to Youtube in footer
+
+[33mcommit 76ceb2e3325395ccca1949719ff0028930b7359e[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Sun Apr 8 00:28:36 2018 +0000
+
+    add mini logo to footer
+
+[33mcommit 220d9477f1b91ab2c3888233d3f15c206a725ed7[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Fri Apr 6 21:50:18 2018 +0000
+
+    add image as banner and main text section
+
+[33mcommit 5eb64c03567e81d13ad4e89e20cd0a2d41cbe822[m
+Author: Jennifer Shiels <jbkd_22@hotmail.com>
+Date:   Tue Apr 3 22:27:53 2018 +0000
+
+    initial commit
