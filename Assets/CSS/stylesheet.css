@@ -9,8 +9,8 @@ html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background: url("Images/backgroundtile.jpg") repeat;
-	color:#ffffff;
+	background: url("../Images/backgroundtile.jpg") repeat;
+	color:#fff
 }
 
 /*----set the text transform to be uppercase
