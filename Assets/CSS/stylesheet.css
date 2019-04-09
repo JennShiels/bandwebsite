@@ -32,6 +32,7 @@ set the general-sub to 'Exo' font imported earlier--*/
 }
 
 .h5 general-sub {
+	text-align: left; 
 	font-size: 15px;
 }
 
@@ -143,7 +144,7 @@ display as block so that it occupies parent container*/
 
 .carousel-inner {
 	width: 650px;
-	height:550;
+	height:550px;
 	padding-top: 15px;
 	margin-left: 25%;
 	margin-bottom:100px;
