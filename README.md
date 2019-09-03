@@ -78,6 +78,16 @@ This website uses **HTML5** , **CSS** and **JScript**. The site is styled with *
   - Opera
   - Microsoft Edge
   - Mozilla Firefox
+  
+
+## Deployment
+- This project is deployed via GitHub Pages through the master branch and can be found at ;
+- https://github.com/JennShiels/bandwebsiteproject 
+ Step 1: Open the repository named bandwebsiteproject
+ Step 2: Select setting
+ Step 3: Scroll down to the Github Pages section
+ Step 4: Under sub-section Source - Master Branch is selected and saved
+ Step 5: The site is published at https://jennshiels.io/bandwebsiteproject/
 
 ## Credits
 
@@ -87,12 +97,8 @@ This website uses **HTML5** , **CSS** and **JScript**. The site is styled with *
 
 
 ### Information
-- The information used to create this site was from the band members and their facebook page
+- The information used to create this site was from the band members and their 
+ facebook page
 
 ### Source
 - https://www.w3schools.com
-
-
-
-
-   
