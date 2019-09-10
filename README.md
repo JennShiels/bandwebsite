@@ -83,11 +83,11 @@ This website uses **HTML5** , **CSS** and **JScript**. The site is styled with *
 ## Deployment
 - This project is deployed via GitHub Pages through the master branch and can be found at ;
 - https://github.com/JennShiels/bandwebsiteproject 
- Step 1: Open the repository named bandwebsiteproject
- Step 2: Select setting
- Step 3: Scroll down to the Github Pages section
- Step 4: Under sub-section Source - Master Branch is selected and saved
- Step 5: The site is published at https://jennshiels.io/bandwebsiteproject/
+- Step 1: Open the repository named bandwebsiteproject
+- Step 2: Select setting
+- Step 3: Scroll down to the Github Pages section
+- Step 4: Under sub-section Source - Master Branch is selected and saved
+- Step 5: The site is published at https://jennshiels.io/bandwebsiteproject/
 
 ## Credits
 
