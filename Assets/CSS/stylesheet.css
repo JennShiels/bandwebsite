@@ -9,7 +9,7 @@ html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background: url("../Images/backgroundtile.jpg") repeat;
+	background: url("../Images/musicsheet.jpg") repeat;
 	color:#fff
 }
 
@@ -37,18 +37,18 @@ set the general-sub to 'Exo' font imported earlier--*/
 }
 
 h2 {
-	margin-top:25px;
+	margin-top:10px;
 	padding-top: 10px;
-	font-size: 35px;
+	font-size: 40px;
 	text-align: center;
-	color: Red;
+	color: black;
 	font-family: fantasy;
 }
 
 h3 {
 	font-size: 30px;
 	text-align: center;
-	color: Red;
+	color: black;
 	font-family: fantasy;
 }
 
@@ -160,9 +160,13 @@ display as block so that it occupies parent container*/
 	font-size: 38px;
 }
 
+/*----------------Index page */
+
+
 /*Images for band members events*/
 
 .media-center {
+	color:black;
 	text-align: center;
 	width: 200px;
 	height: 200px;
@@ -176,6 +180,14 @@ display as block so that it occupies parent container*/
 
 .blockquote {
 	margin: 0;
+	
+}
+
+.members  {
+	border: 5px solid red;
+    background-color: rgba(0, 124, 244, 0.8);
+	margin:10px;
+	color:red;
 }
 
 .blockquote p {
@@ -194,6 +206,7 @@ display as block so that it occupies parent container*/
 /*Images for band members info*/
 
 .rounded-images {
+	margin:10px;
 	text-align: left;
 	width: 120px;
 	height: 120px;
@@ -270,12 +283,15 @@ div.item{
 
 /*--------------------------Contact form------*/
 
+
+
 input[type=text],
 select,
 textarea {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
+	background-image: url("musicsheet.jpg");
 	border-radius: 4px;
 	box-sizing: border-box;
 	margin-top: 6px;
@@ -298,8 +314,9 @@ input[type=submit]:hover {
 
 .container {
 	color:black;
+	font-size: larger;
 	border-radius: 5px;
-	background-color: #f2f2f2;
+	background-color: #ccc;
 	padding: 20px;
 	margin-bottom: 150px;
 }
@@ -311,7 +328,9 @@ input[type=submit]:hover {
 		margin-right: auto;
 		margin-left: auto;
 		padding-left: 15px;
-		padding-right: 15px;}
+		padding-right: 15px;
+	
+}
 
 /*--style the font for the social links*/
 
@@ -333,7 +352,6 @@ footer {
     left: 0; 
     background-color:#cf1407;
 	color: #fafafa;
-	max-height: 120px;
 	margin: 0;
 }
 
@@ -378,24 +396,16 @@ So the idea is we're going to use a border to create a perfect circle around the
 }
 
 #footer-details {
-	margin: 20px;
+	margin: 0px;
 }
 
 
 /*-------------------------Media Queries---*/
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-	.bglogo img {
-		width: 85%;
-		margin-left: 7.5%;
-		text-align: center;
-	}
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media screen and (min-width:600px) {
+@media screen and (max-width:600px) {
 	.bglogo img {
 		width: 85%;
 		margin-left: 7.5%;
@@ -428,10 +438,12 @@ So the idea is we're going to use a border to create a perfect circle around the
 		text-align: center;
 	}
 
-
 	footer .subscribe i {
-		color: #c48b1a;
-		/*gold*/
+		color: #c48b1a; /*gold*/
+		text-align: center;
+		font-size: 12px;
+		padding-left: 5px;
+
 	}
 	.social-links li a i:hover {
 		background-color: #c48b1a;
