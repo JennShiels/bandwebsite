@@ -41,7 +41,7 @@ h2 {
 	padding-top: 10px;
 	font-size: 40px;
 	text-align: center;
-	color: black;
+	color: red;
 	font-family: fantasy;
 }
 
@@ -136,7 +136,7 @@ display as block so that it occupies parent container*/
 
 .hvr-sweep-to-bottom:before {
 	background: rgba(0, 0, 0, 0.25);
-	height: 75px;
+	height: 55px;
 }
 
 
@@ -184,9 +184,14 @@ display as block so that it occupies parent container*/
 }
 
 .members  {
-	border: 5px solid red;
-    background-color: rgba(0, 124, 244, 0.8);
+	border: 5px solid black;
+    background-image: url(../Images/twoguitars.jpg); 
 	margin:10px;
+	font-weight:bold;
+	color:black;
+}
+
+.members h3 {
 	color:red;
 }
 
@@ -275,7 +280,7 @@ div.item{
 
 .page-header {
 	font-size: 18px;
-	margin: 0;
+	margin: 0px;
 	text-align: center;
 	color: red;
 }
@@ -361,7 +366,7 @@ and our text and the display itself.
 It's a bit small.*/
 
 footer .subscribe i {
-	color: #cf1407;
+	color: white;
 	text-align: center;
 	font-size: 12px;
 	padding-left: 5px;
@@ -391,7 +396,7 @@ So the idea is we're going to use a border to create a perfect circle around the
 }
 
 .social-links li a i:hover {
-	background-color: #cf1407;
+	background-color: #CF1407;
 
 }
 
@@ -402,10 +407,18 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 /*-------------------------Media Queries---*/
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.bglogo img {
+		width: 85%;
+		margin-left: 7.5%;
+		text-align: center;
+	}
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media screen and (max-width:600px) {
+@media screen and (min-width:600px) {
 	.bglogo img {
 		width: 85%;
 		margin-left: 7.5%;
@@ -424,8 +437,8 @@ So the idea is we're going to use a border to create a perfect circle around the
 		height: 75px;
 	}
 	.menubutton {
-		background: #c48b1a;
-		/* Royal blue colour for menu buttons in mobile*/
+		background: #CF1407;
+		/* Red colour for menu buttons small devices*/
 		height: 75px;
 	}
 	.flex-container>div>iframe {
@@ -438,20 +451,18 @@ So the idea is we're going to use a border to create a perfect circle around the
 		text-align: center;
 	}
 
-	footer .subscribe i {
-		color: #c48b1a; /*gold*/
-		text-align: center;
-		font-size: 12px;
-		padding-left: 5px;
 
+	footer .subscribe i {
+		color: #CF1407;
+		/*red*/
 	}
 	.social-links li a i:hover {
-		background-color: #c48b1a;
+		background-color: #CF1407;
 
 	}
 }
 
-@media screen and (max-width:800px) {
+@media screen and (min-width:800px) {
 	.bglogo img {
 		width: 85%;
 		margin-left: 7.5%;
@@ -463,13 +474,21 @@ So the idea is we're going to use a border to create a perfect circle around the
 		/*Darkgrey*/
 	}
 	.menubutton {
-		background: #cf1407;
-		/* Fire red colour for menu buttons in mobile*/
+		background: #C48B1A;
+		/* Gold colour for menu buttons ipad*/
 	}
 	.menubar span {
 		font-size: 14px;
 		font-weight: 100;
 		letter-spacing: 1.5px;
+	}
+		footer .subscribe i {
+		color: #c48b1a;
+		/*gold*/
+	}
+	.social-links li a i:hover {
+		background-color: #c48b1a;
+
 	}
 }
 
@@ -517,5 +536,4 @@ So the idea is we're going to use a border to create a perfect circle around the
 
 	}
 }
-
 /*Jennifer Shiels 2019*/
